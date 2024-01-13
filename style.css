@@ -1,0 +1,367 @@
+html,
+body,
+p,
+ol,
+ul,
+li,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+ul,li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: currentColor;
+}
+body{
+  font-family: Montserrat;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 16px;
+padding-right: 16px;
+}
+
+
+/* ==================header================= */
+
+.header{
+  background-color: #84A178;
+  display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding-top: 8px;
+ padding-bottom: 5px;
+}
+
+
+.header-nav{
+  /* background-color: #84A178; */
+}
+
+.header-list{
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+}
+
+.header-item{
+color: #FCFCFC;
+font-size: 16px;
+font-weight: 700;
+line-height: normal;
+}
+
+.header-item:hover{
+  color: #F8D24E;
+
+}
+
+.button-header{
+  color: #000;
+text-align: center;
+font-size: 14px;
+font-weight: 600;
+line-height: normal;
+border-radius: 10px;
+background: #F8D24E;
+padding: 12px 51px 12px 36px;
+}
+
+/* ======================banner========================== */
+
+.banner{
+  background-color: #84A178;
+  padding-top: 40px;
+}
+
+.banner-title{
+  color: #ffffff;
+font-family: Seymour One;
+font-size: 38px;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.52px;
+text-transform: uppercase;
+}
+
+.banner-btn{
+  color: #000000;
+text-align: center;
+font-size: 14px;
+font-weight: 600;
+line-height:1.28;
+padding: 12px 34px;
+border-radius: 10px;
+border: 2px solid #F8D24E;
+background-color: transparent;
+}
+
+.banner-link{
+  color: #F8D24E;
+font-size: 14px;
+font-weight: 600;
+line-height: normal;
+text-decoration-line: underline;
+}
+
+.banner-span{
+  color: #000000;
+font-size: 14px;
+font-weight: 400;
+line-height: normal;
+}
+
+.banner-text{
+  color: #000000;
+font-family: DM Sans;
+font-size: 14px;
+font-weight: 400;
+line-height: 1.4; 
+}
+
+/* ====================products================== */
+
+.product-subtitle{
+  color: #131313;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.product-title{
+  color: #131313;
+text-align: center;
+font-family: Seymour One;
+font-size: 36px;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 2.16px;
+text-transform: uppercase;
+}
+
+.h3-product{
+  color: #131313;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.2px;
+text-transform: uppercase;
+}
+
+.text-product{
+  color: #131313;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.76; 
+letter-spacing: 0.64px;
+}
+
+/* ===================made================== */
+
+.tradition-made{
+  color: #131313;
+text-align: center;
+font-size: 30px;
+font-weight: 800;
+line-height: normal;
+letter-spacing: 1.2px;
+text-transform: uppercase;
+}
+
+.made-made{
+  color: #131313;
+text-align: center;
+font-size: 36px;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 2.16px;
+text-transform: uppercase;
+}
+.text-made{
+  color: #000000;
+font-size: 16px;
+font-weight: 400;
+line-height: 176%; /* 28.16px */
+letter-spacing: 0.64px;
+}
+
+.button-made{
+  color: #000;
+text-align: center;
+font-size: 14px;
+font-weight: 600;
+line-height: 18px; /* 128.571% */
+background-color: #F8D24E;
+border-radius: 10px;
+}
+
+.h3-made{
+  color: #000000;
+text-align: center;
+font-size: 58px;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 2.32px;
+text-transform: uppercase;
+}
+
+.p-made{
+  color: #000000;
+text-align: center;
+font-size: 16px;
+font-weight: 400;
+line-height: 176%; /* 28.16px */
+letter-spacing: 0.32px;
+}
+
+/* ====================review=================== */
+
+.text-review{
+  color: #FCFCFC;
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+line-height: 186%; /* 29.76px */
+letter-spacing: 0.64px;
+}
+
+.p-review{
+  color: #131313;
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+line-height: 186%; /* 29.76px */
+}
+
+/* ==================location===================*/
+
+.title-location{
+  color: #131313;
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+line-height: 140%; /* 22.4px */
+letter-spacing: 0.64px;
+}
+
+.city-location{
+  color: #131313;
+font-size: 16px;
+font-weight: 500;
+line-height: 186%; /* 29.76px */
+letter-spacing: 0.64px;
+}
+
+.addrese-location{
+  color: #D6936D;
+font-size: 16px;
+font-weight: 500;
+line-height: 183%; /* 29.28px */
+letter-spacing: 0.64px;
+}
+
+.day-location{
+  color: #131313;
+font-size: 16px;
+font-weight: 500;
+line-height: 186%; /* 29.76px */
+letter-spacing: 0.64px;
+}
+
+.time-location{
+  color: #ABABAB;
+font-size: 16px;
+font-weight: 500;
+line-height: 186%; /* 29.76px */
+}
+
+.link-location{
+  color: #131313;
+font-size: 16px;
+font-weight: 500;
+line-height: 150%; /* 24px */
+}
+
+.button-location{
+  color: #131313;
+text-align: center;
+font-size: 14px;
+font-weight: 600;
+line-height: 18px; /* 128.571% */
+background-color: #F8D24E;
+border-radius: 10px;
+}
+
+.btn-location{
+  color: #000;
+text-align: center;
+font-size: 14px;
+font-weight: 600;
+line-height: 18px; /* 128.571% */
+border-color: #F8D24E;
+border-radius: 10px;
+}
+
+/* ==================footer====================== */
+
+.subtitle-footer{
+  color: #000000;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.title-footer{
+  color: #000000;
+  font-size: 58px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3.48px;
+  text-transform: uppercase;
+}
+
+.link-location{
+  color: #131313;
+font-size: 16px;
+font-weight: 700;
+line-height: 1.86;
+letter-spacing: 0.32px;
+}
+
+.text-footer{
+  color: #7A7A7A;
+font-size: 12px;
+font-weight: 700;
+line-height: 1.86%; 
+letter-spacing: 0.24px;
+}
