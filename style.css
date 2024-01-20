@@ -32,6 +32,7 @@ a{
 }
 body{
   font-family: Montserrat;
+  color: #131313;
 }
 
 img{
@@ -52,6 +53,7 @@ padding-right: 16px;
 
 .header{
   background-color: #84A178;
+ 
   display: flex;
  align-items: center;
  justify-content: space-between;
@@ -74,7 +76,6 @@ padding-right: 16px;
 color: #FCFCFC;
 font-size: 16px;
 font-weight: 700;
-line-height: normal;
 }
 
 .header-item:hover{
@@ -87,7 +88,6 @@ line-height: normal;
 text-align: center;
 font-size: 14px;
 font-weight: 600;
-line-height: normal;
 border-radius: 10px;
 background: #F8D24E;
 padding: 12px 51px 12px 36px;
@@ -97,7 +97,14 @@ padding: 12px 51px 12px 36px;
 
 .banner{
   background-color: #84A178;
+  background-image: url(img/bg.png);
   padding-top: 40px;
+  height: 586px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+ 
 }
 
 .banner-title{
@@ -105,9 +112,10 @@ padding: 12px 51px 12px 36px;
 font-family: Seymour One;
 font-size: 38px;
 font-weight: 400;
-line-height: normal;
 letter-spacing: 1.52px;
 text-transform: uppercase;
+width: 367px;
+margin-bottom: 28px;
 }
 
 .banner-btn{
@@ -120,13 +128,13 @@ padding: 12px 34px;
 border-radius: 10px;
 border: 2px solid #F8D24E;
 background-color: transparent;
+margin-right: 34px;
 }
 
 .banner-link{
   color: #F8D24E;
 font-size: 14px;
 font-weight: 600;
-line-height: normal;
 text-decoration-line: underline;
 }
 
@@ -134,60 +142,128 @@ text-decoration-line: underline;
   color: #000000;
 font-size: 14px;
 font-weight: 400;
-line-height: normal;
+text-align: right;
+position:absolute;
+right: 16px;
+top: 0;
+/* top: 111px; */
+
+}
+.banner-span:nth-of-type(1){}
+.banner-span:nth-of-type(1)::before{
+  content:"16";
+  display: block;
+text-align: right;
+font-size: 46px;
+font-weight: 900;
+letter-spacing: 1.84px;
+text-transform: uppercase;
+margin-top: 51px;
+margin-bottom: 4px;
+}
+
+.banner-span:nth-of-type(2)::before{
+  content:"32";
+  display: block;
+text-align: right;
+font-size: 46px;
+font-weight: 900;
+letter-spacing: 1.84px;
+text-transform: uppercase;
+margin-top: 144px;
+margin-bottom: 4px;
 }
 
 .banner-text{
-  color: #000000;
-font-family: DM Sans;
-font-size: 14px;
 font-weight: 400;
 line-height: 1.4; 
+color: #FFF;
+font-family: "DM Sans";
+font-size: 14px;
 }
 
 /* ====================products================== */
 
-.product-subtitle{
-  color: #131313;
+.products{
+  background-image: url(img/cream-ground.jpg);
+  padding-top: 60px;
+}
+
+.products-subtitle{
   text-align: center;
   font-size: 30px;
   font-weight: 800;
-  line-height: normal;
   letter-spacing: 1.2px;
   text-transform: uppercase;
+  margin-bottom: 12px;
 }
 
-.product-title{
-  color: #131313;
+.products-title{
 text-align: center;
 font-family: Seymour One;
-font-size: 36px;
+font-size: 36px; 
 font-weight: 400;
-line-height: normal;
 letter-spacing: 2.16px;
 text-transform: uppercase;
+margin-bottom: 120px;
 }
 
-.h3-product{
-  color: #131313;
+.products-list{
+
+}
+
+.products-item{
+
+}
+
+.products-img-shadow{
+ 
+  height: 320px;
+  background:rgba(156, 190, 143);
+  border-radius: 302px;
+  position: relative;
+ display: inline-block;
+ box-shadow: 0px 8px 30px 0px rgba(10, 136, 23, 0.25);
+}
+
+.products-img-shadow:nth-child(1){
+  background:rgba(156, 190, 143);
+}
+
+.products-img-shadow:nth-child(2){
+  background:rgba(248, 210, 78);
+}
+
+.products-img-shadow:nth-child(3){
+  background:rgba(213, 117, 63);
+}
+
+.products-img-shadow>img{
+ /* box-shadow: 0px 8px 30px 0px rgba(10, 136, 23, 0.25); */
+  border-radius: 50%;
+
+}
+
+.products-item-title{
+text-align: center;
+font-size: 30px;
 font-weight: 700;
 line-height: normal;
 letter-spacing: 1.2px;
 text-transform: uppercase;
 }
 
-.text-product{
-  color: #131313;
-font-size: 16px;
-font-weight: 400;
-line-height: 1.76; 
-letter-spacing: 0.64px;
+.products-item-text{
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 176%; /* 28.16px */
+  letter-spacing: 0.64px;
 }
 
 /* ===================made================== */
 
 .tradition-made{
-  color: #131313;
 text-align: center;
 font-size: 30px;
 font-weight: 800;
