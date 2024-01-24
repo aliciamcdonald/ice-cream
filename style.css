@@ -33,6 +33,7 @@ a{
 body{
   font-family: Montserrat;
   color: #131313;
+  line-height: normal;
 }
 
 img{
@@ -263,30 +264,65 @@ text-transform: uppercase;
 
 /* ===================made================== */
 
-.tradition-made{
+.made{
+  background-color:  #84A178;;
+  padding-top: 60px;
+}
+
+.made-wrap-discription{
+  display: flex;
+  justify-content: center;
+  gap: 109px;
+}
+
+.made-subtitle{
 text-align: center;
 font-size: 30px;
 font-weight: 800;
-line-height: normal;
 letter-spacing: 1.2px;
 text-transform: uppercase;
+color: #FCFCFC;
 }
 
-.made-made{
-  color: #131313;
+.made-title{
+color: #FCFCFC;
 text-align: center;
+font-family: "Seymour One";
 font-size: 36px;
 font-weight: 400;
-line-height: normal;
 letter-spacing: 2.16px;
 text-transform: uppercase;
+margin-top: 16px;
+margin-bottom: 82px;
 }
+
+.made-img-shadow{
+  height: 320px;
+  background:#F8D24EB2(156, 190, 143);
+  border-radius: 302px;
+  position: relative;
+ display: inline-block;
+ box-shadow: 0px 8px 30px 0px rgba(10, 136, 23, 0.25);
+}
+
 .text-made{
-  color: #000000;
+  color: #FCFCFC;
 font-size: 16px;
 font-weight: 400;
-line-height: 176%; /* 28.16px */
+line-height: 1.76; 
 letter-spacing: 0.64px;
+margin-top: 90px;
+margin-bottom: 8px;
+
+}
+
+.paragraph-made{
+  color: #FCFCFC;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.94;
+  letter-spacing: 0.56px;
+  margin-bottom: 54px;
 }
 
 .button-made{
@@ -297,6 +333,8 @@ font-weight: 600;
 line-height: 18px; /* 128.571% */
 background-color: #F8D24E;
 border-radius: 10px;
+padding: 12px 34px;
+border: none;
 }
 
 .h3-made{
@@ -317,6 +355,8 @@ font-weight: 400;
 line-height: 176%; /* 28.16px */
 letter-spacing: 0.32px;
 }
+
+
 
 /* ====================review=================== */
 
