@@ -34,6 +34,7 @@ a {
 body {
   font-family: Montserrat;
   color: #131313;
+  line-height: normal;
 }
 
 img {
@@ -206,15 +207,50 @@ img {
 }
 
 .products-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
 }
 
 .products-item {
+  width: 370px;
+}
+.products-item img {
+  border-radius: 302px;
+  position: absolute;
+  z-index: 2;
+  top: -4px;
+  left: 35px;
+  margin-top: -183px;
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7) 0%,
+      rgba(156, 190, 143, 0.7) 100%
+    ),
+    #d9d9d9;
+  box-shadow: 0px 19px 0px 0px rgba(248, 210, 78, 0.9),
+    0px 8px 30px 0px rgba(10, 136, 23, 0.25);
 }
 
-.products-img-shadow {
-  height: 320px;
-  /* background: rgba(156, 190, 143); */
-  /* box-shadow: 0px 8px 30px 0px rgba(10, 136, 23, 0.25); */
+.products-item:nth-of-type(1) .products-wrap-descr img {
+  box-shadow: 0px 19px 0px 0px rgba(156, 190, 143, 0.7),
+    0px 8px 30px 0px rgba(10, 136, 23, 0.25);
+  /* background-color: rgba(156, 190, 143, 0.7); */
+}
+.products-item:nth-of-type(2) .products-wrap-descr img {
+  box-shadow: 0px 19px 0px 0px rgba(248, 210, 78, 0.9),
+    0px 8px 30px 0px rgba(153, 114, 23, 0.25);
+  /* background-color: rgba(248, 210, 78, 0.7); */
+}
+.products-item:nth-of-type(3) .products-wrap-descr img {
+  box-shadow: 0px 19px 0px 0px rgba(213, 117, 63, 0.7),
+    0px 8px 30px 0px rgba(0, 0, 0, 0.25);
+  /* background-color: rgba(213, 117, 63, 0.7); */
+}
+
+.products-wrap-descr {
+  /* height: 320px; */
+  background: rgba(156, 190, 143);
   border-radius: 302px;
   position: relative;
   display: inline-block;
@@ -259,30 +295,64 @@ img {
 
 /* ===================made================== */
 
-.tradition-made {
+.made {
+  background-color: #84a178;
+  padding-top: 60px;
+}
+
+.made-wrap-discription {
+  display: flex;
+  justify-content: center;
+  gap: 109px;
+}
+
+.made-subtitle {
   text-align: center;
   font-size: 30px;
   font-weight: 800;
-  line-height: normal;
   letter-spacing: 1.2px;
   text-transform: uppercase;
+  color: #fcfcfc;
 }
 
-.made-made {
-  color: #131313;
+.made-title {
+  color: #fcfcfc;
   text-align: center;
+  font-family: "Seymour One";
   font-size: 36px;
   font-weight: 400;
-  line-height: normal;
   letter-spacing: 2.16px;
   text-transform: uppercase;
+  margin-top: 16px;
+  margin-bottom: 82px;
 }
+
+.made-img-shadow {
+  height: 320px;
+  background: #F8D24EB2(156, 190, 143);
+  border-radius: 302px;
+  position: relative;
+  display: inline-block;
+  box-shadow: 0px 8px 30px 0px rgba(10, 136, 23, 0.25);
+}
+
 .text-made {
-  color: #000000;
+  color: #fcfcfc;
   font-size: 16px;
   font-weight: 400;
-  line-height: 176%; /* 28.16px */
+  line-height: 1.76;
   letter-spacing: 0.64px;
+  margin-top: 90px;
+  margin-bottom: 8px;
+}
+
+.paragraph-made {
+  color: #fcfcfc;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.94;
+  letter-spacing: 0.56px;
+  margin-bottom: 54px;
 }
 
 .button-made {
@@ -293,28 +363,48 @@ img {
   line-height: 18px; /* 128.571% */
   background-color: #f8d24e;
   border-radius: 10px;
+  padding: 12px 34px;
+  border: none;
 }
 
-.h3-made {
-  color: #000000;
+.list-made {
+  display: flex;
+  justify-content: center;
+}
+
+.num-made {
+  color: #fcfcfc;
   text-align: center;
   font-size: 58px;
+  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 2.32px;
   text-transform: uppercase;
 }
 
-.p-made {
-  color: #000000;
+.par-made {
+  color: #fcfcfc;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
   line-height: 176%; /* 28.16px */
   letter-spacing: 0.32px;
+  margin-bottom: 178px;
+  padding-right: 16px;
+  padding-left: 32px;
 }
 
 /* ====================review=================== */
+
+.img-review {
+  margin: 0 auto;
+}
+
+.pic-review {
+  margin: 0 auto;
+  border-radius: 50px;
+}
 
 .text-review {
   color: #fcfcfc;
@@ -325,7 +415,7 @@ img {
   letter-spacing: 0.64px;
 }
 
-.p-review {
+.paragraph-review {
   color: #131313;
   text-align: center;
   font-size: 16px;
