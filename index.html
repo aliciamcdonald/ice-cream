@@ -17,77 +17,84 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="header container">
-      <a href="/" class="logo"><img src="img/Logo.svg" alt="logo" /></a>
-      <nav class="header-nav">
-        <ul class="header-list">
-          <li class="header-item">
-            <a href="#" class="header-link">Home</a>
-          </li>
-          <li class="header-item">
-            <a href="#" class="header-link">How it’s made?</a>
-          </li>
-          <li class="header-item">
-            <a href="#" class="header-link">Our products</a>
-          </li>
-          <li class="header-item">
-            <a href="#" class="header-link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="button-header">Buy now ></button>
+    <header class="header">
+      <div class="container">
+        <a href="/" class="logo"><img src="img/Logo.svg" alt="logo" /></a>
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-item">
+              <a href="#" class="header-link">Home</a>
+            </li>
+            <li class="header-item">
+              <a href="#" class="header-link">How it’s made?</a>
+            </li>
+            <li class="header-item">
+              <a href="#" class="header-link">Our products</a>
+            </li>
+            <li class="header-item">
+              <a href="#" class="header-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="button-header">Buy now ></button>
+      </div>
     </header>
     <main>
-      <section class="banner container">
-        <h1 class="banner-title">ice cream made with passion</h1>
-        <button class="banner-btn">Products</button>
-        <a href="#" class="banner-link">How it’s made? </a>
-        <p class="banner-span">cafes</p>
-        <p class="banner-span">food trucks</p>
-        <p class="banner-text">
-          Indulge in a scoop of ice cream made with passion and treat your taste
-          buds to an unforgettable experience!
-        </p>
+      <section class="banner">
+        <div class="container">
+          <h1 class="banner-title">ice cream made with passion</h1>
+          <button class="banner-btn">Products</button>
+          <a href="#" class="banner-link">How it’s made? </a>
+          <p class="banner-span">cafes</p>
+          <p class="banner-span">food trucks</p>
+          <p class="banner-text">
+            Indulge in a scoop of ice cream made with passion and treat your
+            taste buds to an unforgettable experience!
+          </p>
+        </div>
       </section>
-      <section class="products container">
-        <h2 class="products-subtitle">100% natural</h2>
-        <h2 class="products-title">products</h2>
-        <ul class="products-list">
-          <li class="products-item">
-            <div class="products-wrap-descr">
-              <img src="img/Ice-cream.png" alt="Ice-cream" />
 
-              <h3 class="products-item-title">ice cream</h3>
-              <p class="products-item-text">
-                Soft ice cream with a delicate taste. Made with milk, cream,
-                sugar and natural stabilizer
-              </p>
-            </div>
-          </li>
-          <li class="products-item">
-            <div class="products-wrap-descr">
-              <img src="img/ice-cofee.png" alt="ice-cofee" />
+      <section class="products">
+        <div class="container">
+          <h2 class="products-subtitle">100% natural</h2>
+          <h2 class="products-title">products</h2>
+          <ul class="products-list">
+            <li class="products-item">
+              <div class="products-wrap-descr">
+                <img src="img/Ice-cream.png" alt="Ice-cream" />
 
-              <h3 class="products-item-title">ice coffee</h3>
-              <p class="products-item-text">
-                SFragrant invigorating drink created from 100% natural
-                ingredients without the use of preservatives and flavor
-                enhancers
-              </p>
-            </div>
-          </li>
-          <li class="products-item">
-            <div class="products-wrap-descr">
-              <img src="img/milkshakes.png" alt="milkshakes" />
+                <h3 class="products-item-title">ice cream</h3>
+                <p class="products-item-text">
+                  Soft ice cream with a delicate taste. Made with milk, cream,
+                  sugar and natural stabilizer
+                </p>
+              </div>
+            </li>
+            <li class="products-item">
+              <div class="products-wrap-descr">
+                <img src="img/ice-cofee.png" alt="ice-cofee" />
 
-              <h3 class="products-item-title">milkshakes</h3>
-              <p class="products-item-text">
-                Sweet drinks based on milk and ice cream, supplemented with
-                syrups, fruits, berries and other sweets of your choice
-              </p>
-            </div>
-          </li>
-        </ul>
+                <h3 class="products-item-title">ice coffee</h3>
+                <p class="products-item-text">
+                  SFragrant invigorating drink created from 100% natural
+                  ingredients without the use of preservatives and flavor
+                  enhancers
+                </p>
+              </div>
+            </li>
+            <li class="products-item">
+              <div class="products-wrap-descr">
+                <img src="img/milkshakes.png" alt="milkshakes" />
+
+                <h3 class="products-item-title">milkshakes</h3>
+                <p class="products-item-text">
+                  Sweet drinks based on milk and ice cream, supplemented with
+                  syrups, fruits, berries and other sweets of your choice
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="made">
         <div class="container">
@@ -107,39 +114,50 @@
                 the age of three years. Sweets lovers can expect 55 types of ice
                 cream, 15 types of coffee and 23 milkshakes.
               </p>
-              <button class="button-made">read more ></button>
+              <button class="button-made">
+                read more
+                <svg width="12" height="12">
+                  <use xlink:href="./img/sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
             </div>
           </div>
+          <ul class="list-made">
+            <li>
+              <div class="made-wrap-icon">
+                <svg width="36" height="36">
+                  <use href="img/sprite.svg#cow"></use>
+                </svg>
+              </div>
+              <h3 class="num-made">721</h3>
+              <p class="par-made">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </li>
+            <li>
+              <div class="made-wrap-icon">
+                <svg width="36" height="36">
+                  <use href="img/sprite.svg#weight"></use>
+                </svg>
+              </div>
+              <h3 class="num-made">16kg</h3>
+              <p class="par-made">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </li>
+            <li>
+              <div class="made-wrap-icon">
+                <svg width="36" height="36">
+                  <use href="img/sprite.svg#ice-cream"></use>
+                </svg>
+              </div>
+              <h3 class="num-made">84</h3>
+              <p class="par-made">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </li>
+          </ul>
         </div>
-        <ul class="list-made">
-          <li>
-            <svg>
-              <use></use>
-            </svg>
-            <h3 class="num-made">721</h3>
-            <p class="par-made">
-              Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-            </p>
-          </li>
-          <li>
-            <svg>
-              <use></use>
-            </svg>
-            <h3 class="num-made">16kg</h3>
-            <p class="par-made">
-              Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-            </p>
-          </li>
-          <li>
-            <svg>
-              <use></use>
-            </svg>
-            <h3 class="num-made">84</h3>
-            <p class="par-made">
-              Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-            </p>
-          </li>
-        </ul>
       </section>
       <section class="review">
         <img class="img-review" src="img/flavors.png" alt="flavors" />

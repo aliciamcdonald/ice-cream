@@ -32,6 +32,8 @@ a {
   color: currentColor;
 }
 body {
+  max-width: 1800px;
+  margin: 0 auto;
   font-family: Montserrat;
   color: #131313;
   line-height: normal;
@@ -102,6 +104,9 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+.banner > .container {
   position: relative;
 }
 
@@ -184,7 +189,11 @@ img {
 
 .products {
   background-image: url(img/cream-ground.jpg);
-  padding-top: 60px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 25px;
+  padding-bottom: 100px;
 }
 
 .products-subtitle {
@@ -203,7 +212,7 @@ img {
   font-weight: 400;
   letter-spacing: 2.16px;
   text-transform: uppercase;
-  margin-bottom: 120px;
+  margin-bottom: 303px;
 }
 
 .products-list {
@@ -222,58 +231,48 @@ img {
   top: -4px;
   left: 35px;
   margin-top: -183px;
-  background: linear-gradient(
+  /* background: linear-gradient(
       0deg,
       rgba(156, 190, 143, 0.7) 0%,
       rgba(156, 190, 143, 0.7) 100%
     ),
-    #d9d9d9;
-  box-shadow: 0px 19px 0px 0px rgba(248, 210, 78, 0.9),
-    0px 8px 30px 0px rgba(10, 136, 23, 0.25);
+    #d9d9d9; */
+  /* box-shadow: 0px 19px 0px 0px rgba(248, 210, 78, 0.9),
+    0px 8px 30px 0px rgba(10, 136, 23, 0.25); */
 }
 
 .products-item:nth-of-type(1) .products-wrap-descr img {
   box-shadow: 0px 19px 0px 0px rgba(156, 190, 143, 0.7),
-    0px 8px 30px 0px rgba(10, 136, 23, 0.25);
-  /* background-color: rgba(156, 190, 143, 0.7); */
+    0px 38px 30px 0px rgba(10, 136, 23, 0.25);
 }
 .products-item:nth-of-type(2) .products-wrap-descr img {
   box-shadow: 0px 19px 0px 0px rgba(248, 210, 78, 0.9),
-    0px 8px 30px 0px rgba(153, 114, 23, 0.25);
-  /* background-color: rgba(248, 210, 78, 0.7); */
+    0px 38px 30px 0px rgba(153, 114, 23, 0.25);
 }
 .products-item:nth-of-type(3) .products-wrap-descr img {
   box-shadow: 0px 19px 0px 0px rgba(213, 117, 63, 0.7),
-    0px 8px 30px 0px rgba(0, 0, 0, 0.25);
-  /* background-color: rgba(213, 117, 63, 0.7); */
+    0px 38px 30px 0px rgba(0, 0, 0, 0.25);
 }
 
 .products-wrap-descr {
-  /* height: 320px; */
-  background: rgba(156, 190, 143);
-  border-radius: 302px;
-  position: relative;
   display: inline-block;
+  position: relative;
+
+  height: 536px;
+  border-radius: 24px;
+  padding: 165px 64px 0 64px;
 }
 
-.products-item:nth-child(1) .products-img-shadow {
-  background: rgba(156, 190, 143);
-  box-shadow: 0px 8px 30px 0px rgba(10, 136, 23, 0.25);
+.products-item:nth-of-type(1) .products-wrap-descr {
+  background-color: rgb(174, 198, 165);
 }
 
-.products-item:nth-child(2) .products-img-shadow {
-  background: rgba(248, 210, 78);
-  box-shadow: 0px 8px 30px 0px rgba(153, 114, 23, 0.25);
+.products-item:nth-of-type(2) .products-wrap-descr {
+  background-color: rgb(239, 212, 120);
 }
 
-.products-item:nth-child(3) .products-img-shadow {
-  background: rgba(213, 117, 63);
-  box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.25);
-}
-
-.products-img-shadow > img {
-  /* box-shadow: 0px 8px 30px 0px rgba(10, 136, 23, 0.25); */
-  border-radius: 50%;
+.products-item:nth-of-type(3) .products-wrap-descr {
+  background-color: rgb(214, 147, 109);
 }
 
 .products-item-title {
@@ -283,6 +282,8 @@ img {
   line-height: normal;
   letter-spacing: 1.2px;
   text-transform: uppercase;
+
+  margin-bottom: 66px;
 }
 
 .products-item-text {
@@ -356,6 +357,8 @@ img {
 }
 
 .button-made {
+  display: flex;
+  align-items: center;
   color: #000;
   text-align: center;
   font-size: 14px;
@@ -365,11 +368,33 @@ img {
   border-radius: 10px;
   padding: 12px 34px;
   border: none;
+  /* margin-bottom: -1px; */
+  margin-left: 4px;
+}
+.button-made svg {
+  margin-left: 4px;
 }
 
 .list-made {
   display: flex;
   justify-content: center;
+  margin-top: 60px;
+}
+
+.made-wrap-icon {
+  width: 50px;
+  height: 50px;
+  padding: 7px;
+  margin: 0 auto;
+
+  border-radius: 25px;
+  background-color: #f8d24e;
+  margin-bottom: 40px;
+}
+.made-wrap-icon:hover,
+.made-wrap-icon:hover svg {
+  fill: #f8d24e;
+  background-color: darkslategrey;
 }
 
 .num-made {
@@ -381,6 +406,7 @@ img {
   line-height: normal;
   letter-spacing: 2.32px;
   text-transform: uppercase;
+  margin-bottom: 12px;
 }
 
 .par-made {
