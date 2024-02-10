@@ -223,6 +223,7 @@ img {
 
 .products-item {
   width: 370px;
+  
 }
 .products-item img {
   border-radius: 302px;
@@ -257,11 +258,12 @@ img {
 .products-wrap-descr {
   display: inline-block;
   position: relative;
-
+  
   height: 536px;
   border-radius: 24px;
-  padding: 165px 64px 0 64px;
+  padding: 165px 64px 60px 64px;
 }
+
 
 .products-item:nth-of-type(1) .products-wrap-descr {
   background-color: rgb(174, 198, 165);
@@ -292,6 +294,20 @@ img {
   font-weight: 400;
   line-height: 176%; /* 28.16px */
   letter-spacing: 0.64px;
+  margin-bottom: 50px;
+
+}
+
+.wrap-icon{
+  width: 40px;
+  height: 16px;
+  margin: 0 auto;
+ 
+}
+
+.products-item-icon{
+
+
 }
 
 /* ===================made================== */
@@ -419,6 +435,7 @@ img {
   margin-bottom: 178px;
   padding-right: 16px;
   padding-left: 32px;
+  
 }
 
 /* ====================review=================== */
