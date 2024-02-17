@@ -468,13 +468,35 @@ img {
 
 /* ==================location===================*/
 
+.location{
+  background-color: #84a178;
+}
+
+
+.location-list{
+  display: flex;
+  gap: 32px;
+margin-bottom: 60px;
+}
+.location-item{
+  border-radius: 24px;
+background-color: #FFF;
+box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.10);
+padding: 44px 40px 40px 40px;
+flex-basis: calc((100% - 3 * 32)/3);
+}
+
 .title-location {
   color: #131313;
-  text-align: center;
   font-size: 16px;
   font-weight: 500;
   line-height: 140%; /* 22.4px */
   letter-spacing: 0.64px;
+  padding: 4px 14px;
+  border-radius: 6px;
+  background: #F8D24E;
+  margin-bottom: 32px;
+display: inline-block;
 }
 
 .city-location {
@@ -483,6 +505,7 @@ img {
   font-weight: 500;
   line-height: 186%; /* 29.76px */
   letter-spacing: 0.64px;
+  margin-bottom: 8px;
 }
 
 .addrese-location {
@@ -491,8 +514,17 @@ img {
   font-weight: 500;
   line-height: 183%; /* 29.28px */
   letter-spacing: 0.64px;
+  margin-bottom: 32px;
+  display: block;
 }
 
+.location-line{
+  margin-bottom: 32px;
+  margin-top: 32px;
+  height: 2px;
+  background-color: #e1e1e1;
+  
+}
 .day-location {
   color: #131313;
   font-size: 16px;
@@ -505,14 +537,27 @@ img {
   color: #ababab;
   font-size: 16px;
   font-weight: 500;
-  line-height: 186%; /* 29.76px */
+  line-height: 1.86; /* 29.76px */
+  margin-bottom: 12px;
+  display: block;
+  
 }
+
+.time-location:nth-child(2) {
+  margin-bottom: 0;
+}
+
 
 .link-location {
   color: #131313;
   font-size: 16px;
   font-weight: 500;
-  line-height: 150%; /* 24px */
+  line-height: 1.50; /* 24px */
+}
+
+.button-wrap-location{
+  display: flex;
+  justify-content: center;
 }
 
 .button-location {
@@ -520,9 +565,12 @@ img {
   text-align: center;
   font-size: 14px;
   font-weight: 600;
-  line-height: 18px; /* 128.571% */
+  line-height: 1.28; /* 128.571% */
   background-color: #f8d24e;
+  margin: 0px 16px 88px;
+  padding: 12px 55px 12px 40px;
   border-radius: 10px;
+
 }
 
 .btn-location {
@@ -530,9 +578,14 @@ img {
   text-align: center;
   font-size: 14px;
   font-weight: 600;
-  line-height: 18px; /* 128.571% */
+  line-height: 1.28; /* 128.571% */
   border-color: #f8d24e;
   border-radius: 10px;
+  background-color: #84a178;
+  padding: 12px 70px 12px 55px;
+  margin-top: 60px;
+  margin-bottom: 88px;
+
 }
 
 /* ==================footer====================== */
