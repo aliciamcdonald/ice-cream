@@ -18,7 +18,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-wrap">
         <a href="/" class="logo"><img src="img/Logo.svg" alt="logo" /></a>
         <nav class="header-nav">
           <ul class="header-list">
@@ -68,9 +68,11 @@
                   Soft ice cream with a delicate taste. Made with milk, cream,
                   sugar and natural stabilizer
                 </p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="16" viewBox="0 0 41 16" fill="none">
-                  <path d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z" fill="#131313"/>
-                </svg>
+                <div class="wrap-icon">
+                  <svg width="40" height="16" class="products-item-icon">
+                    <use href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
               </div>
             </li>
             <li class="products-item">
@@ -84,10 +86,10 @@
                   enhancers
                 </p>
                 <div class="wrap-icon">
-                <svg width="40" height="16" class="products-item-icon">
-                  <use href="img/sprite.svg#arrow"></use>
-                </svg>
-              </div>
+                  <svg width="40" height="16" class="products-item-icon">
+                    <use href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
               </div>
             </li>
             <li class="products-item">
@@ -99,9 +101,11 @@
                   Sweet drinks based on milk and ice cream, supplemented with
                   syrups, fruits, berries and other sweets of your choice
                 </p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="16" viewBox="0 0 41 16" fill="none">
-                  <path d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z" fill="#131313"/>
-                </svg>
+                <div class="wrap-icon">
+                  <svg width="40" height="16" class="products-item-icon">
+                    <use href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
               </div>
             </li>
           </ul>
@@ -182,91 +186,93 @@
       </section>
       <section class="location">
         <div class="container">
-        <ul class="location-list">
-          <li class="location-item">
-            <div class="">
-            <h3 class="title-location">CAFE</h3>
-            <p class="city-location">Chicago</p>
-            <a
-              href="https://maps.app.goo.gl/Uc3uewk8tscfvbbf8"
-              target="_blank"
-              class="addrese-location"
-            >
-              10340 Ridgeland Ave, Chicago <br>
-               Ridge, IL 60415, USA</a
-            >
-             <hr class="location-line">
-            <p class="day-location">Monday - Friday</p>
-            <time class="time-location">06:00 AM - 10:00 PM</time>
-            <p class="day-location">Saturday - Sunday</p>
-            <time class="time-location">08:00 AM - 16:00 PM</time>
-              <hr class="location-line">
-            <a href="tel:+1(0)383766284" class="link-location"
-              >+1(0) 383 766 284</a
-            >
-            <a href="mailto:noreply@envato.com" class="link-location"
-              >noreply@envato.com</a
-            >
-          </div>
-          </li>
-          <li class="location-item">
-            <div>
-            <h3 class="title-location">FOOD TRUCK</h3>
-            <p class="city-location">Los Angeles</p>
-            <a
-              href="https://maps.app.goo.gl/3sJtXXzna27jYRpD9"
-              target="_blank"
-              class="addrese-location"
-              >1003 Manhattan Ave, Manhattan <br> Beach, CA 90263, USA</a
-            >
-             <hr class="location-line">
-            <p class="day-location">Monday - Friday</p>
-            <time class="time-location">06:00 AM - 10:00 PM</time>
-            <p class="day-location">Saturday - Sunday</p>
-            <time class="time-location">08:00 AM - 16:00 PM</time>
-             <hr class="location-line">
-            <a href="tel:+1(0)383766284" class="link-location"
-              >+1(0) 383 766 284</a
-            >
-            <a href="mailto:noreply@envato.com" class="link-location"
-              >noreply@envato.com</a
-            >
+          <ul class="location-list">
+            <li class="location-item">
+              <div class="">
+                <h3 class="title-location">CAFE</h3>
+                <p class="city-location">Chicago</p>
+                <a
+                  href="https://maps.app.goo.gl/Uc3uewk8tscfvbbf8"
+                  target="_blank"
+                  class="addrese-location"
+                >
+                  10340 Ridgeland Ave, Chicago <br />
+                  Ridge, IL 60415, USA</a
+                >
+                <hr class="location-line" />
+                <p class="day-location">Monday - Friday</p>
+                <time class="time-location">06:00 AM - 10:00 PM</time>
+                <p class="day-location">Saturday - Sunday</p>
+                <time class="time-location">08:00 AM - 16:00 PM</time>
+                <hr class="location-line" />
+                <a href="tel:+1(0)383766284" class="link-location"
+                  >+1(0) 383 766 284</a
+                >
+                <a href="mailto:noreply@envato.com" class="link-location"
+                  >noreply@envato.com</a
+                >
+              </div>
             </li>
-          </li>
-          <li class="location-item">
-            <div>
-            <h3 class="title-location">CAFE</h3>
-            <p class="city-location">New York</p>
-            <a
-              href="https://maps.app.goo.gl/KhQP9YcCoQVop93n7"
-              target="_blank"
-              class="addrese-location"
-              >726 Sterling Pl, Brooklyn, NY <br>
-               11222, USA</a
-            >
-             <hr class="location-line">
-            <p class="day-location">Monday - Friday</p>
-            <time class="time-location">06:00 AM - 10:00 PM</time>
-            <p class="day-location">Saturday - Sunday</p>
-            <time class="time-location">08:00 AM - 16:00 PM</time>
-            <hr class="location-line">
-            <a href="tel:+1(0)383766284" class="link-location"
-              >+1(0) 383 766 284</a
-            >
-            <a href="mailto:noreply@envato.com" class="link-location"
-              >noreply@envato.com</a
-            >
-            </div>
-          </li>
-        </ul>
-        <div class="button-wrap-location">
-        <button type="button" class="button-location">Our Locations</button>
-        <button type="button" class="btn-location">Franchise</button>
-      </div>
-      </div>
+            <li class="location-item">
+              <div>
+                <h3 class="title-location">FOOD TRUCK</h3>
+                <p class="city-location">Los Angeles</p>
+                <a
+                  href="https://maps.app.goo.gl/3sJtXXzna27jYRpD9"
+                  target="_blank"
+                  class="addrese-location"
+                  >1003 Manhattan Ave, Manhattan <br />
+                  Beach, CA 90263, USA</a
+                >
+                <hr class="location-line" />
+                <p class="day-location">Monday - Friday</p>
+                <time class="time-location">06:00 AM - 10:00 PM</time>
+                <p class="day-location">Saturday - Sunday</p>
+                <time class="time-location">08:00 AM - 16:00 PM</time>
+                <hr class="location-line" />
+                <a href="tel:+1(0)383766284" class="link-location"
+                  >+1(0) 383 766 284</a
+                >
+                <a href="mailto:noreply@envato.com" class="link-location"
+                  >noreply@envato.com</a
+                >
+              </div>
+            </li>
+
+            <li class="location-item">
+              <div>
+                <h3 class="title-location">CAFE</h3>
+                <p class="city-location">New York</p>
+                <a
+                  href="https://maps.app.goo.gl/KhQP9YcCoQVop93n7"
+                  target="_blank"
+                  class="addrese-location"
+                  >726 Sterling Pl, Brooklyn, NY <br />
+                  11222, USA</a
+                >
+                <hr class="location-line" />
+                <p class="day-location">Monday - Friday</p>
+                <time class="time-location">06:00 AM - 10:00 PM</time>
+                <p class="day-location">Saturday - Sunday</p>
+                <time class="time-location">08:00 AM - 16:00 PM</time>
+                <hr class="location-line" />
+                <a href="tel:+1(0)383766284" class="link-location"
+                  >+1(0) 383 766 284</a
+                >
+                <a href="mailto:noreply@envato.com" class="link-location"
+                  >noreply@envato.com</a
+                >
+              </div>
+            </li>
+          </ul>
+          <div class="button-wrap-location">
+            <button type="button" class="button-location">Our Locations</button>
+            <button type="button" class="btn-location">Franchise</button>
+          </div>
+        </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <h3 class="subtitle-footer">homemade ice cream made</h3>
       <h2 class="title-footer">with passion</h2>
       <a href="#" class="link-location"
