@@ -32,7 +32,7 @@ a {
   color: currentColor;
 }
 body {
-  max-width: 1800px;
+  max-width: 1600px;
   margin: 0 auto;
   font-family: Montserrat;
   color: #131313;
@@ -179,8 +179,8 @@ img {
 
 .banner-text {
   width: 200px;
-  margin-top: 109px;
-  margin-left: 257px;
+  margin-top: 135px;
+  margin-left: 290px;
 
   font-weight: 400;
   line-height: 1.4;
@@ -446,6 +446,7 @@ img {
   background-position: center;
   background-size: cover;
   height: 1055px;
+  padding-top: 460px;
 }
 .img-review {
   /* margin: 0 auto; */
@@ -454,9 +455,19 @@ img {
   left: 395px;
 }
 
+.list-review {
+
+}
+
+.item-review{
+ 
+}
+
 .pic-review {
   margin: 0 auto;
   border-radius: 50px;
+  margin-bottom: 32px;
+
 }
 
 .text-review {
@@ -464,8 +475,15 @@ img {
   text-align: center;
   font-size: 16px;
   font-weight: 500;
-  line-height: 186%; /* 29.76px */
+  line-height: 1.86; 
   letter-spacing: 0.64px;
+  background-color: #84a178;
+  padding: 43px 109px;
+  border-radius: 24px;
+  width: 970px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+
 }
 
 .paragraph-review {
@@ -488,6 +506,9 @@ img {
   display: flex;
   gap: 32px;
   margin-bottom: 60px;
+  margin-top: -128px;
+  z-index: 3;
+  position: relative;
 }
 .location-item {
   border-radius: 24px;
@@ -618,17 +639,23 @@ img {
   padding-top: 60px;
   padding-bottom: 12px;
 }
+.wrap-footer{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
 .subtitle-footer {
-  color: #000000;
+  color: #fcfcfc;
   font-size: 30px;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 1.2px;
   text-transform: uppercase;
+ margin-bottom: 14px ;
 }
 
 .title-footer {
-  color: #000000;
+  color: #fcfcfc;
   font-size: 58px;
   font-weight: 700;
   line-height: normal;
@@ -636,12 +663,46 @@ img {
   text-transform: uppercase;
 }
 
-.link-location {
-  color: #131313;
+.wrap-contact{
   font-size: 16px;
   font-weight: 700;
   line-height: 1.86;
   letter-spacing: 0.32px;
+
+  
+}
+
+  .contact-footer {
+  display: inline-block;
+  color: #131313;
+
+}
+
+.link-footer {
+  color: #fff;
+}
+
+.icone-item{
+  width: 34px;
+  height: 34px;
+  background-color: #F8D24E;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-icone{
+  fill: #84a178;
+}
+
+
+.line-footer{
+ border-color: #E1E1E1;
+ padding: 0 16px;
+ margin-top: 60px;
+ /* margin-bottom: 12px; */
+
 }
 
 .text-footer {
@@ -650,4 +711,7 @@ img {
   font-weight: 700;
   line-height: 1.86%;
   letter-spacing: 0.24px;
+  text-align: center;
+  padding-bottom: 12px;
+  padding-top: 12px;
 }
