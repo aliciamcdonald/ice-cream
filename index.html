@@ -13,6 +13,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <!-- <link rel="stylesheet" href="url-to-cdn/splide.min.css"> -->
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
@@ -178,13 +181,30 @@
       </section>
       <section class="review">
         <img class="img-review" src="img/flavors.png" alt="flavors" />
-        <img class="pic-review" src="img/persone.png" alt="persone" />
-        <p class="text-review">
-          I love visiting your cafe. You prepare the most delicious ice cream in
-          Los Angeles! In addition, you have beautiful serving, cozy atmosphere
-          and polite staff.
-        </p>
-        <p class="paragraph-review">Emily, Los Angeles</p>
+        <div class="splide" aria-label="Приклад основного HTML Splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">  
+                <img class="pic-review" src="img/persone1.png" alt="persone" />
+                <p class="text-review">
+                  I love visiting your cafe. You prepare the most delicious ice cream in
+                  Los Angeles! In addition, you have beautiful serving, cozy atmosphere
+                  and polite staff.
+                </p>
+                <p class="paragraph-review">Emily, Los Angeles</p></li>
+              <li class="splide__slide"> <img class="pic-review" src="img/persone2.png" alt="persone" />
+                <p class="text-review">
+                  Every day we come to you with friends after classes in college. We love your ice cream and casual atmosphere!
+                </p>
+                <p class="paragraph-review">Bryan, New-York</p></li>
+              <li class="splide__slide"> <img class="pic-review" src="img/persone3.png" alt="persone" />
+                <p class="text-review">
+                  Ice cream is my passion! I love your chocolate hazelnut ice cream! And I really like the excellent service - always served politely and quickly!
+                </p>
+                <p class="paragraph-review">Diana, Chicago</p></li>
+            </ul>
+          </div>
+        </div>
       </section>
       <section class="location">
         <div class="container">
@@ -283,5 +303,9 @@
 
       <p class="text-footer">© 2022 - IceCream. All Rights Reserved.</p>
     </footer>
+
+    <script>
+      new Splide( '.splide' ).mount();
+    </script>
   </body>
 </html>
