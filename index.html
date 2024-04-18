@@ -14,7 +14,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
     <!-- <link rel="stylesheet" href="url-to-cdn/splide.min.css"> -->
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
@@ -27,8 +30,6 @@
           <ul class="header-list">
             <li class="header-item">
               <a href="#" class="header-link">Home</a>
-
-              
             </li>
             <li class="header-item">
               <a href="#" class="header-link">How it’s made?</a>
@@ -184,24 +185,32 @@
         <div class="splide" aria-label="Приклад основного HTML Splide">
           <div class="splide__track">
             <ul class="splide__list">
-              <li class="splide__slide">  
+              <li class="splide__slide">
                 <img class="pic-review" src="img/persone1.png" alt="persone" />
                 <p class="text-review">
-                  I love visiting your cafe. You prepare the most delicious ice cream in
-                  Los Angeles! In addition, you have beautiful serving, cozy atmosphere
-                  and polite staff.
+                  I love visiting your cafe. You prepare the most delicious ice
+                  cream in Los Angeles! In addition, you have beautiful serving,
+                  cozy atmosphere and polite staff.
                 </p>
-                <p class="paragraph-review">Emily, Los Angeles</p></li>
-              <li class="splide__slide"> <img class="pic-review" src="img/persone2.png" alt="persone" />
+                <p class="paragraph-review">Emily, Los Angeles</p>
+              </li>
+              <li class="splide__slide">
+                <img class="pic-review" src="img/persone2.png" alt="persone" />
                 <p class="text-review">
-                  Every day we come to you with friends after classes in college. We love your ice cream and casual atmosphere!
+                  Every day we come to you with friends after classes in
+                  college. We love your ice cream and casual atmosphere!
                 </p>
-                <p class="paragraph-review">Bryan, New-York</p></li>
-              <li class="splide__slide"> <img class="pic-review" src="img/persone3.png" alt="persone" />
+                <p class="paragraph-review">Bryan, New-York</p>
+              </li>
+              <li class="splide__slide">
+                <img class="pic-review" src="img/persone3.png" alt="persone" />
                 <p class="text-review">
-                  Ice cream is my passion! I love your chocolate hazelnut ice cream! And I really like the excellent service - always served politely and quickly!
+                  Ice cream is my passion! I love your chocolate hazelnut ice
+                  cream! And I really like the excellent service - always served
+                  politely and quickly!
                 </p>
-                <p class="paragraph-review">Diana, Chicago</p></li>
+                <p class="paragraph-review">Diana, Chicago</p>
+              </li>
             </ul>
           </div>
         </div>
@@ -297,62 +306,39 @@
     <footer class="footer">
       <div class="wrap-footer">
         <div>
-      <h3 class="subtitle-footer">homemade ice cream made</h3>
-      <h2 class="title-footer">with passion</h2>
-     </div>
-      <div class="wrap-contact">
-        <ul class="icon-list">
-          <li class="icon-item">
-            <a href="#">
-              <svg class="svg-icon" width="20" height="20" >
-            <use href="./img/sprite.svg#github">
-              
-            </use>
-          </svg>
-        </a> 
-        </li>
-        <li class="icon-item"><a href="#"><svg class="svg-icon" width="20" height="20" >
-          <use href="./img/sprite.svg#telegram" >
-            
-          </use>
-        </svg></a> 
-      </li>
-      <li class="icon-item"><a href="#"><svg class="svg-icon" width="20" height="16" >
-        <use href="./img/sprite.svg#facebook" >
-          
-        </use>
-      </svg></a> 
-    </li>
-    
-    
-  </ul>
-        <p class="contact-footer">Feel free to contact</p> 
-        <a href="tel:+10383766284" class="link-footer">+1 (0) 383 766 284</a> 
-</div>
-  
-</div>
-     <hr class="line-footer">
+          <h3 class="subtitle-footer">homemade ice cream made</h3>
+          <h2 class="title-footer">with passion</h2>
+        </div>
+        <div class="wrap-contact">
+          <ul class="icon-list">
+            <li class="icon-item">
+              <a href="#">
+                <svg class="svg-icon" width="20" height="20">
+                  <use href="./img/sprite.svg#github"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-item">
+              <a href="#"
+                ><svg class="svg-icon" width="20" height="20">
+                  <use href="./img/sprite.svg#telegram"></use></svg>          ></a>
+            </li>
+            <li class="icon-item">
+              <a href="#"
+                ><svg class="svg-icon" width="20" height="16">
+                  <use href="./img/sprite.svg#facebook"></use></svg>              ></a>
+            </li>
+          </ul>
+          <p class="contact-footer">Feel free to contact</p>
+          <a href="tel:+10383766284" class="link-footer">+1 (0) 383 766 284</a>
+        </div>
+      </div>
+      <hr class="line-footer" />
       <p class="text-footer">© 2022 - IceCream. All Rights Reserved.</p>
     </footer>
 
-    <section class="test">
-
-      <div class="element-hover">
-        <h2>element-hover</h2>
-        <img src="img/bg.png" alt="" class="test-img">
-      </div>
-
-      <div class="element-transition">
-        <h2>element-transition</h2>
-        <img src="img/bg.png" alt="" class="test-img-transition">
-      </div>
-
-
-
-    </section>
-
     <script>
-      new Splide( '.splide' ).mount();
+      new Splide(".splide").mount();
     </script>
   </body>
 </html>
