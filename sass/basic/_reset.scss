@@ -1,0 +1,49 @@
+html,
+body,
+p,
+ol,
+ul,
+li,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+a:-webkit-any-link {
+  cursor: url(img/cursor.svg) 4 12, auto;
+}
+body {
+  max-width: 1800px;
+  margin: 0 auto;
+  font-family: Montserrat;
+  color: #131313;
+  line-height: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
