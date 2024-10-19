@@ -27,6 +27,9 @@ ul,
 li {
   list-style: none;
 }
+button{
+  padding: 0;
+}
 a {
   text-decoration: none;
   color: currentColor;
@@ -40,6 +43,7 @@ body {
   font-family: Montserrat;
   color: #131313;
   line-height: normal;
+  background-color: #84A178;
 }
 
 img {
