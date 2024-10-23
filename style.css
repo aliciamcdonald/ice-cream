@@ -77,17 +77,27 @@ img {
   display: flex;
   justify-content: center;
   gap: 28px;
+
 }
 
 .header-item {
   color: #fcfcfc;
   font-size: 16px;
   font-weight: 700;
+  transition-duration:  5s;
+  transition-property:transporm, color;
 }
 
-.header-item:hover {
+.header-item:hover .header-link{
   color: #f8d24e;
+  
 }
+
+.header-item:hover{
+  transform: scale(1.25);
+
+}
+
 
 .button-header {
   color: #000;
@@ -97,6 +107,14 @@ img {
   border-radius: 10px;
   background: #f8d24e;
   padding: 12px 51px 12px 36px;
+  transition-property:transporm, color;
+}
+.button-header:hover .button-link{
+color: #84a178;
+}
+
+.button-header:hover{
+  transform: scale(1.30);
 }
 
 /* ======================banner========================== */
