@@ -81,6 +81,11 @@ img {
   }
 }
 
+.header {
+  padding-top: 20px;
+  margin-bottom: 15px;
+}
+
 .header-wrap {
   display: flex;
   justify-content: space-between;
@@ -88,7 +93,7 @@ img {
 }
 
 .header-menu-icon {
-  fill: #F8D24E;
+  fill: #f8d24e;
 }
 
 .header-menu-btn {
@@ -100,11 +105,17 @@ img {
 }
 
 .header-menu-icon-btn {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .header-nav {
   display: none;
+}
+
+.header-list {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
 }
 
 .button-header {
@@ -129,14 +140,13 @@ img {
 @media screen and (min-width: 1200px) {
   .header {
     padding: 24px 0;
-    border: 2px solid #000;
   }
   .header-menu-btn {
     display: none;
   }
-  .header-wrap {
-    padding-top: 8px;
-    padding-bottom: 5px;
+  .header-menu-icon {
+    width: 60px;
+    height: 65px;
   }
   .header-nav {
     display: flex;
@@ -164,4 +174,16 @@ img {
 
 .products-bg {
   background-image: url(../img/cream-ground.jpg);
+}
+
+.banner {
+  margin-top: 50px;
+}
+.banner .banner-title {
+  background-image: url(../img/mobile/mobile_bg_header.png), url(../img/mobile/mobile_bg_dots.png);
+  padding-top: 40px;
+  height: 586px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }/*# sourceMappingURL=main.css.map */

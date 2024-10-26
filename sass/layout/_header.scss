@@ -1,15 +1,17 @@
 .header {
+  padding-top: 20px;
+  margin-bottom: 15px;
 }
 
 .header-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .logo {
 }
-.header-menu-icon{
-  fill: #F8D24E;
+.header-menu-icon {
+  fill: #f8d24e;
 }
 .header-menu-btn {
   display: flex;
@@ -18,13 +20,16 @@
   background-color: transparent;
   border: none;
 }
-.header-menu-icon-btn{
-  fill: #FFFFFF;
+.header-menu-icon-btn {
+  fill: #ffffff;
 }
 .header-nav {
   display: none;
 }
 .header-list {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
 }
 .header-item {
 }
@@ -38,54 +43,51 @@
 .animate__zoomInUp {
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 768px) {
+  .button-header {
+    display: flex;
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 10px;
+    background: #f8d24e;
+    padding: 12px 36px 12px 36px;
+  }
+  .header-menu-btn {
+    margin-right: -451px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 24px 0;
+  }
+  .header-menu-btn {
+    display: none;
+  }
+  .header-wrap {
+  }
+  .header-menu-icon {
+    width: 60px;
+    height: 65px;
+  }
+  .header-nav {
+    display: flex;
+  }
+  .header-list {
+    display: flex;
+    justify-content: center;
+    // gap: 28px;
+  }
+  .header-item {
+    color: #fcfcfc;
+    font-size: 16px;
+    font-weight: 700;
+  }
 
-   }
-     @media screen and (min-width:768px) {
-
-      .button-header{
-        display: flex;
-        color: #000;
-        text-align: center;
-        font-size: 14px;
-        font-weight: 600;
-        border-radius: 10px;
-        background: #f8d24e;
-        padding: 12px 36px 12px 36px;
-      }
-      .header-menu-btn{
-        margin-right: -451px
-      }
-   }
-     @media screen and (min-width:1200px) {
-      .header{
-        padding: 24px 0;
-        border: 2px solid #000;
-      }
-.header-menu-btn{
-  display: none;
+  .header-item:hover {
+    color: #f8d24e;
+  }
 }
-.header-wrap {
-  padding-top: 8px;
-  padding-bottom: 5px;
-}
-.header-nav{
-  display: flex;
-
-}
-.header-list {
-  display: flex;
-  justify-content: center;
-  // gap: 28px;
-}
-.header-item {
-  color: #fcfcfc;
-  font-size: 16px;
-  font-weight: 700;
-}
-
-.header-item:hover {
-  color: #f8d24e;
-}
-
-   }
