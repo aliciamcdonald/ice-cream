@@ -1,32 +1,77 @@
 .banner {
-margin-top: 50px;
-background-image: url(../img/mobile/mobile_bg_header.png), url(../img/mobile/mobile_bg_dots.png);
-padding-top: 40px;
-height: 586px;
-background-repeat: no-repeat;
-background-size: contain;
-background-position: center; 
 
+   .container {
+    margin-top: 50px;
+    padding-top: 40px;
+    background-image: url(../img/mobile/mobile_bg_header.png),
+    url(../img/mobile/mobile_bg_dots.png);
+ 
+  height: 460px;
+  background-repeat: no-repeat;
+  background-position: 56% bottom, 56% bottom;
+  }
+  .banner-title {
+    width: 247px;
+    margin-bottom: 32px;
+    margin-right: 12px;
 
-    .banner-title {
-    }
-    .animate__animated {
-    }
-    .animate__zoomInUp {
-    }
-    .banner-btn {
-    }
-    .banner-link {
-    }
-    .banner-span {
-    }
-    .banner-text {
-    }
+    color: #fcfcfc;
+    font-family: "Seymour One";
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 1.04px;
+    text-transform: uppercase;
+  }
+  .animate__animated {
+  }
+  .animate__zoomInUp {
+  }
+  .banner-title > span {
+    font-size: 34px;
+    line-height: 0.96;
+  }
+  .banner-btn {
+    padding: 11px 26px;
+    background-color: transparent;
+    border-radius: 8px;
+    border: 2px solid #f8d24e;
+
+    color: #000;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .banner-link {
+    // display: flex;
+    color: #f8d24e;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration-line: underline;
+    margin-left: 12px;
+  }
+  .banner-span {
+  }
+  .banner-text {
+    display: none;
+  }
 
   @media screen and (min-width: 480px) {
+    .container {
+      height: 302px;
+      background-position: 81% bottom, 100% bottom;
+      background-color: red;
+
+    }
   }
   @media screen and (min-width: 768px) {
+    .container {
+
+      background-color: rgb(118, 224, 37);
+
+    }
   }
   @media screen and (min-width: 1200px) {
   }
 }
+
+
