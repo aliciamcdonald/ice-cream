@@ -178,8 +178,6 @@ img {
 
 .banner {
   margin-top: 50px;
-}
-.banner .banner-title {
   background-image: url(../img/mobile/mobile_bg_header.png), url(../img/mobile/mobile_bg_dots.png);
   padding-top: 40px;
   height: 586px;
