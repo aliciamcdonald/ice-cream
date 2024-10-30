@@ -125,10 +125,14 @@ color: #84a178;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  width: 268px;
+  height: 329px;
 }
 
 .banner > .container {
   position: relative;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .banner-title {
