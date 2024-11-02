@@ -1,14 +1,13 @@
 .banner {
-
-   .container {
+  .container {
     margin-top: 50px;
     padding-top: 40px;
     background-image: url(../img/mobile/mobile_bg_header.png),
-    url(../img/mobile/mobile_bg_dots.png);
- 
-  height: 460px;
-  background-repeat: no-repeat;
-  background-position: 56% bottom, 56% bottom;
+      url(../img/mobile/mobile_bg_dots.png);
+
+    height: 460px;
+    background-repeat: no-repeat;
+    background-position: 56% bottom, 56% bottom;
   }
   .banner-title {
     width: 247px;
@@ -54,24 +53,69 @@
   .banner-text {
     display: none;
   }
-
+  .banner-food-trucks {
+    display: none;
+  }
+  .banner-cafes {
+    display: none;
+  }
   @media screen and (min-width: 480px) {
     .container {
       height: 302px;
       background-position: 81% bottom, 100% bottom;
-      background-color: red;
-
+      // background-color: red;
     }
   }
+  // ======================= tablet ========================
   @media screen and (min-width: 768px) {
     .container {
+      height: 386px;
+      background-image: url(../img/tablet/bgi_banner.png);
+      background-position: bottom;
+    }
+    .banner-text {
+      display: block;
+      margin-left: 247px;
+      margin-top: 125px;
+      width: 200px;
 
-      background-color: rgb(118, 224, 37);
+      color: #fff;
+      font-family: "DM Sans";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.4;
+    }
 
+    .banner-food-trucks {
+      display: block;
+      color: #fcfcfc;
+      text-align: right;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    .banner-food-trucks::before {
+      content: '16';
+      display: block;
+    }
+    .banner-cafes {
+      display: block;
+      color: #FCFCFC;
+text-align: right;
+font-size: 14px;
+font-weight: 400;
+    }
+    .banner-cafes::before {
+      content: '23';
+      display: block;
     }
   }
+  // ======================= desktop ========================
   @media screen and (min-width: 1200px) {
+    .container {
+      height: 560px;
+      // background-color: rgb(118, 224, 37);
+      background-image: url(../img/desktop/bgi_banner.png);
+      background-position: bottom;
+    }
   }
 }
-
-

@@ -219,15 +219,62 @@ img {
 .banner .banner-text {
   display: none;
 }
+.banner .banner-food-trucks {
+  display: none;
+}
+.banner .banner-cafes {
+  display: none;
+}
 @media screen and (min-width: 480px) {
   .banner .container {
     height: 302px;
     background-position: 81% bottom, 100% bottom;
-    background-color: red;
   }
 }
 @media screen and (min-width: 768px) {
   .banner .container {
-    background-color: rgb(118, 224, 37);
+    height: 386px;
+    background-image: url(../img/tablet/bgi_banner.png);
+    background-position: bottom;
+  }
+  .banner .banner-text {
+    display: block;
+    margin-left: 247px;
+    margin-top: 125px;
+    width: 200px;
+    color: #fff;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+  .banner .banner-food-trucks {
+    display: block;
+    color: #fcfcfc;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .banner .banner-food-trucks::before {
+    content: "16";
+    display: block;
+  }
+  .banner .banner-cafes {
+    display: block;
+    color: #FCFCFC;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .banner .banner-cafes::before {
+    content: "23";
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .banner .container {
+    height: 560px;
+    background-image: url(../img/desktop/bgi_banner.png);
+    background-position: bottom;
   }
 }/*# sourceMappingURL=main.css.map */
