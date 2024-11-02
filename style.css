@@ -209,11 +209,12 @@ color: #84a178;
   margin-top: 135px;
   margin-left: 290px;
 
-  font-weight: 400;
-  line-height: 1.4;
-  color: #fff;
-  font-family: "DM Sans";
-  font-size: 14px;
+  color: #FFF;
+font-family: "DM Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 16.8px */
 }
 
 /* ====================products================== */
