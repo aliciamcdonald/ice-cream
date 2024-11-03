@@ -219,6 +219,12 @@ img {
 .banner .banner-text {
   display: none;
 }
+.banner .wrap-cafe {
+  position: relative;
+}
+.banner .banner-num {
+  position: obsolute;
+}
 .banner .banner-food-trucks {
   display: none;
 }
