@@ -54,19 +54,23 @@
     display: none;
   }
 
-  .wrap-cafe{
-    position: relative;
+  .wrap-cafes {
+    display: none;
+    // position: relative;
+  }
+  .banner-arrow{
+    display: none;
   }
 
-  .banner-num{
-    position: obsolute;
+  .banner-num {
+    // position: obsolute;
   }
 
   .banner-food-trucks {
-    display: none;
+    // display: none;
   }
   .banner-cafes {
-    display: none;
+    // display: none;
   }
   @media screen and (min-width: 480px) {
     .container {
@@ -78,14 +82,17 @@
   // ======================= tablet ========================
   @media screen and (min-width: 768px) {
     .container {
-      height: 386px;
+      position: relative;
+      margin-top: 0;
+      padding-top: 0;
+      height: 350px;
       background-image: url(../img/tablet/bgi_banner.png);
       background-position: bottom;
     }
     .banner-text {
       display: block;
-      margin-left: 247px;
-      margin-top: 125px;
+      margin-left: 216px;
+      margin-top: 39px;
       width: 200px;
 
       color: #fff;
@@ -95,27 +102,55 @@
       line-height: 1.4;
     }
 
-    .banner-food-trucks {
+    .wrap-cafes {
       display: block;
+      // position: relative;
+    }
+
+    .banner-food-trucks {
+      position: absolute;
+      top: 40px;
+      right: 32px;
       color: #fcfcfc;
-      text-align: right;
-      font-size: 14px;
+      font-size: 8px;
       font-weight: 400;
     }
     .banner-food-trucks::before {
-      content: '16';
+      content: "16";
       display: block;
+
+      color: #131313;
+      text-align: right;
+      font-size: 28px;
+      font-weight: 900;
+      letter-spacing: 1.12px;
+      text-transform: uppercase;
     }
     .banner-cafes {
       display: block;
-      color: #FCFCFC;
-text-align: right;
-font-size: 14px;
-font-weight: 400;
+      position: absolute;
+      top: 100px;
+      right: 32px;
+      color: #fcfcfc;
+      text-align: right;
+      font-size: 8px;
+      font-weight: 400;
     }
     .banner-cafes::before {
-      content: '23';
+      content: "23";
       display: block;
+
+      color: #131313;
+      text-align: right;
+      font-size: 28px;
+      font-weight: 900;
+      letter-spacing: 1.12px;
+      text-transform: uppercase;
+    }
+    .banner-arrow{
+      display: block;
+      fill: #fcfcfc;
+      margin-top: 29px;
     }
   }
   // ======================= desktop ========================
@@ -125,6 +160,24 @@ font-weight: 400;
       // background-color: rgb(118, 224, 37);
       background-image: url(../img/desktop/bgi_banner.png);
       background-position: bottom;
+    }
+
+    .banner-text{
+      margin-left: 243px;
+      margin-top: 163px;
+    }
+    .banner-food-trucks{
+      font-size: 14px;
+    }
+    .banner-food-trucks::before {
+      font-size: 46px;
+    }
+
+    .banner-cafes{
+      font-size: 14px;
+    }
+    .banner-cafes::before {
+      font-size: 46px;
     }
   }
 }

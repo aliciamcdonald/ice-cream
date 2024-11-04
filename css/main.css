@@ -165,15 +165,30 @@ img {
   }
 }
 .products {
+  background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 25px;
-  padding-bottom: 100px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-
-.products-bg {
-  background-image: url(../img/cream-ground.jpg);
+.products .products-bg {
+  background-image: url(../img/mobile/product-bg.png);
+}
+@media screen and (min-width: 480px) {
+  .products {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .products {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products {
+    width: 1200px;
+  }
 }
 
 .banner .container {
@@ -219,16 +234,10 @@ img {
 .banner .banner-text {
   display: none;
 }
-.banner .wrap-cafe {
-  position: relative;
-}
-.banner .banner-num {
-  position: obsolute;
-}
-.banner .banner-food-trucks {
+.banner .wrap-cafes {
   display: none;
 }
-.banner .banner-cafes {
+.banner .banner-arrow {
   display: none;
 }
 @media screen and (min-width: 480px) {
@@ -239,14 +248,17 @@ img {
 }
 @media screen and (min-width: 768px) {
   .banner .container {
-    height: 386px;
+    position: relative;
+    margin-top: 0;
+    padding-top: 0;
+    height: 350px;
     background-image: url(../img/tablet/bgi_banner.png);
     background-position: bottom;
   }
   .banner .banner-text {
     display: block;
-    margin-left: 247px;
-    margin-top: 125px;
+    margin-left: 216px;
+    margin-top: 39px;
     width: 200px;
     color: #fff;
     font-family: "DM Sans";
@@ -254,27 +266,51 @@ img {
     font-weight: 400;
     line-height: 1.4;
   }
-  .banner .banner-food-trucks {
+  .banner .wrap-cafes {
     display: block;
+  }
+  .banner .banner-food-trucks {
+    position: absolute;
+    top: 40px;
+    right: 32px;
     color: #fcfcfc;
-    text-align: right;
-    font-size: 14px;
+    font-size: 8px;
     font-weight: 400;
   }
   .banner .banner-food-trucks::before {
     content: "16";
     display: block;
+    color: #131313;
+    text-align: right;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 1.12px;
+    text-transform: uppercase;
   }
   .banner .banner-cafes {
     display: block;
-    color: #FCFCFC;
+    position: absolute;
+    top: 100px;
+    right: 32px;
+    color: #fcfcfc;
     text-align: right;
-    font-size: 14px;
+    font-size: 8px;
     font-weight: 400;
   }
   .banner .banner-cafes::before {
     content: "23";
     display: block;
+    color: #131313;
+    text-align: right;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 1.12px;
+    text-transform: uppercase;
+  }
+  .banner .banner-arrow {
+    display: block;
+    fill: #fcfcfc;
+    margin-top: 29px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -282,5 +318,21 @@ img {
     height: 560px;
     background-image: url(../img/desktop/bgi_banner.png);
     background-position: bottom;
+  }
+  .banner .banner-text {
+    margin-left: 243px;
+    margin-top: 163px;
+  }
+  .banner .banner-food-trucks {
+    font-size: 14px;
+  }
+  .banner .banner-food-trucks::before {
+    font-size: 46px;
+  }
+  .banner .banner-cafes {
+    font-size: 14px;
+  }
+  .banner .banner-cafes::before {
+    font-size: 46px;
   }
 }/*# sourceMappingURL=main.css.map */
