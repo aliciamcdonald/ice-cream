@@ -172,6 +172,16 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.products .produts-subtitle {
+  color: #131313;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+}
 .products .products-bg {
   background-image: url(../img/mobile/product-bg.png);
 }
