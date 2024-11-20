@@ -43,11 +43,16 @@ body {
   font-family: Montserrat;
   color: #131313;
   line-height: normal;
-  background-color: #84A178;
+  // background-color: #84A178;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.bgc{
+  max-width: 1600px;
+  background-color: #84A178;
 }
