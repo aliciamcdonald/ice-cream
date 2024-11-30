@@ -33,6 +33,14 @@ margin-bottom: 148px;
   flex-direction: column;
   gap: 168px;
 }
+
+.products-item{
+  width: 320px;
+  margin: 0 auto;
+  padding-right: 26px;
+  padding-left: 26px;
+}
+
 .products-item img {
   width: 200px;
   height: 200px;
@@ -40,8 +48,9 @@ margin-bottom: 148px;
   position: absolute;
   z-index: 2;
   top: -4px;
-  left: 35px;
+  left: 50%;
   margin-top: -103px;
+  transform: translate(-50%);
   /* background: linear-gradient(
       0deg,
       rgba(156, 190, 143, 0.7) 0%,
@@ -53,16 +62,16 @@ margin-bottom: 148px;
 }
 
 .products-item:nth-of-type(1) .products-wrap-descr img {
-  box-shadow: 0px 19px 0px 0px rgba(156, 190, 143, 0.7),
-    0px 38px 30px 0px rgba(10, 136, 23, 0.25);
+  box-shadow: 0px 11px 0px 0px rgba(156, 190, 143, 0.7),
+  0px 5.413px 20.3px 0px  rgba(10, 136, 23, 0.25);
 }
 .products-item:nth-of-type(2) .products-wrap-descr img {
-  box-shadow: 0px 19px 0px 0px rgba(248, 210, 78, 0.9),
-    0px 38px 30px 0px rgba(153, 114, 23, 0.25);
+  box-shadow: 0px 11px 0px 0px rgba(248, 210, 78, 0.9),
+  0px 5.413px 20.3px 0px  rgba(153, 114, 23, 0.25);
 }
 .products-item:nth-of-type(3) .products-wrap-descr img {
-  box-shadow: 0px 19px 0px 0px rgba(213, 117, 63, 0.7),
-    0px 38px 30px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 11px 0px 0px rgba(213, 117, 63, .7), 0px 5.413px 20.3px 0px rgba(0, 0, 0, .25);
+
 }
 
 .products-wrap-descr {
@@ -71,7 +80,8 @@ margin-bottom: 148px;
 
   height: 536px;
   border-radius: 24px;
-  padding: 165px 64px 60px 64px;
+  padding: 123px 53px 16px 53px;
+  
 }
 
 .products-item:nth-of-type(1) .products-wrap-descr {
@@ -88,28 +98,28 @@ margin-bottom: 148px;
 
 .products-item-title {
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 1.2px;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
 
-  margin-bottom: 66px;
+  margin-bottom: 40px;
 }
 
 .products-item-text {
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 176%; /* 28.16px */
-  letter-spacing: 0.64px;
+  letter-spacing: 0.56px;
   padding-bottom: 50px;
 }
 
 .wrap-icon {
   position: absolute;
 
-  bottom: 60px;
+  bottom: 16px;
   left: 45%;
   width: 40px;
   height: 16px;
@@ -120,7 +130,14 @@ margin-bottom: 148px;
 
      }
        @media screen and (min-width:768px) {
- 
+ .products-list{ 
+  flex-direction: row;
+  gap: 16px;
+
+ }
+ .products-item{
+  width: 224px;
+ }
      }
        @media screen and (min-width:1200px) {
    
