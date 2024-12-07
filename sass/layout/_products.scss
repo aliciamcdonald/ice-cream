@@ -110,7 +110,13 @@
     line-height: 1.76;
     letter-spacing: 0.56px;
     margin-bottom: 101px;
+
+    
+
   }
+  font-size: 16px;
+  line-height: 1.76; 
+  letter-spacing: 0.64px;
 
   .wrap-icon {
     position: absolute;
@@ -151,19 +157,37 @@
   }
 
   @media screen and (min-width: 1200px) {
+
+    .products-title{
+      margin-bottom: 303px;
+    }
     .products-list {
       flex-direction: row;
       gap: 29px;
     }
     .products-item {
       width: 370px;
+ 
     }
     .products-wrap-descr {
-      padding: 126px 26px 16px 26px;
+      padding: 165px 64px 16px 64px;
       height: 536px;
+      img{
+        width: 302px;
+        height: 302px;
+        top: -78px;
+      }
     }
     .products-item-title{
       font-size: 30px;
+    }
+    .products-item-text{
+      font-size: 16px;
+  line-height: 1.76; 
+  letter-spacing: 0.64px;
+    }
+    .wrap-icon{
+      bottom: 60px;
     }
   }
 }
