@@ -242,6 +242,9 @@ img {
   border-radius: 24px;
   padding: 123px 53px 16px 53px;
 }
+.products .products-img {
+  font-size: 22px;
+}
 .products .products-item:nth-of-type(1) .products-wrap-descr {
   background-color: rgb(174, 198, 165);
 }
@@ -476,4 +479,30 @@ img {
   font-weight: 400;
   line-height: 176%; /* 21.12px */
   letter-spacing: 0.48px;
+}
+
+.list-made {
+  display: flex;
+}
+
+.num-made {
+  color: #FCFCFC;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.92px;
+  text-transform: uppercase;
+}
+
+.par-made {
+  color: #FCFCFC;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 174%; /* 24.36px */
 }/*# sourceMappingURL=main.css.map */
