@@ -181,6 +181,9 @@ img {
   line-height: 1.76;
   letter-spacing: 0.64px;
 }
+.products .products-img {
+  font-size: 30px;
+}
 .products .products-subtitle {
   color: #131313;
   text-align: center;
