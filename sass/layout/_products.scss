@@ -6,6 +6,8 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-image: url(../img/mobile/product-bg.png);
+  max-width: 1600px;
+  margin: 0 auto;
 
 .products-img{
   font-size: 30px;
@@ -161,7 +163,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-
+    background-image: url(../img/desktop/cream-ground.jpg);
     .products-title{
       margin-bottom: 303px;
     }
