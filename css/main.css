@@ -554,4 +554,20 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: 174%; /* 24.36px */
+}
+
+.paragraph-made {
+  margin-bottom: 24px;
+}
+
+.button-made {
+  border-radius: 10px;
+  background: #F8D24E;
+  padding: 12px 51px;
+  margin-bottom: 50px;
+}
+
+.svg-made {
+  border-radius: 25px;
+  background: #F8D24E;
 }/*# sourceMappingURL=main.css.map */
