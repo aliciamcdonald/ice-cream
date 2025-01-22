@@ -604,6 +604,7 @@ img {
     margin: 0;
   }
   .made .made-wrap-text {
+    text-align: left;
     width: 334px;
     margin: 0;
   }
@@ -628,7 +629,7 @@ img {
   }
   .made .made-wrap-discription {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     gap: 109px;
     margin-bottom: 60px;
   }
@@ -640,6 +641,23 @@ img {
   .made .made-wrap-text {
     width: 463px;
     margin: 0;
+    padding-top: 75px;
+  }
+  .made .text-made {
+    font-size: 16px;
+    line-height: 176%; /* 28.16px */
+    letter-spacing: 0.64px;
+  }
+  .made .paragraph-made {
+    font-size: 14px;
+    line-height: 194%; /* 27.16px */
+    letter-spacing: 0.56px;
+    margin-bottom: 8px;
+  }
+  .made .decription-made {
+    font-size: 14px;
+    line-height: 194%; /* 27.16px */
+    letter-spacing: 0.56px;
   }
   .made .list-made {
     flex-direction: row;
@@ -655,4 +673,8 @@ img {
   .made .par-made {
     width: auto;
   }
+}
+
+.review {
+  background-color: #ffd000;
 }/*# sourceMappingURL=main.css.map */

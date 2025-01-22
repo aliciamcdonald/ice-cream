@@ -146,6 +146,7 @@
       margin: 0;
     }
     .made-wrap-text {
+      text-align: left;
       width: 334px;
       margin: 0;
     }
@@ -190,7 +191,7 @@
     }
     .made-wrap-discription {
       display: flex;
-      justify-content: center;
+      justify-content: start;
       gap: 109px;
       margin-bottom: 60px;
     }
@@ -202,12 +203,24 @@
     .made-wrap-text {
       width: 463px;
       margin: 0;
+      padding-top: 75px;
     }
     .text-made {
+    
+      font-size: 16px;
+      line-height: 176%; /* 28.16px */
+      letter-spacing: 0.64px;
     }
     .paragraph-made {
+font-size: 14px;
+line-height: 194%; /* 27.16px */
+letter-spacing: 0.56px;
+margin-bottom: 8px;
     }
     .decription-made {
+font-size: 14px;
+line-height: 194%; /* 27.16px */
+letter-spacing: 0.56px;
     }
     .button-made {
     }
