@@ -678,6 +678,8 @@ img {
 .review {
   background-color: #ffd000;
   padding-bottom: 30px;
+  background: url("img/desktop/Bg-icecream.png") no-repeat center center fixed;
+  background-size: cover;
 }
 .review .img-review {
   width: 280px;
