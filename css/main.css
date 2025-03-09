@@ -677,7 +677,7 @@ img {
 
 .review {
   background-color: #ffd000;
-  padding-bottom: 60px;
+  padding-bottom: 188px;
   background-image: linear-gradient(#84a178 39px, rgba(0, 0, 0, 0)), url("../img/desktop/Bg-icecream.png");
   background-size: cover;
 }
@@ -727,13 +727,13 @@ img {
   }
 }
 .location {
-  background-color: #84a178;
   font-weight: 500;
   font-size: 12px;
   padding-bottom: 60px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 25%, #84a178 25%);
+  margin-top: -110px;
 }
-
-.location-item {
+.location .location-item {
   background-color: #fff;
   margin: 0 auto;
   border-radius: 24px;
@@ -741,8 +741,7 @@ img {
   padding: 44px 36px 24px 32px;
   width: 280px;
 }
-
-.title-location {
+.location .title-location {
   color: #131313;
   text-align: center;
   line-height: 120%; /* 14.4px */
@@ -753,56 +752,47 @@ img {
   padding: 4px 22px;
   margin-bottom: 20px;
 }
-
-.city-location {
+.location .city-location {
   color: #131313;
   line-height: 186%; /* 22.32px */
   letter-spacing: 0.48px;
   margin-bottom: 8px;
 }
-
-.addrese-location {
+.location .addrese-location {
   color: #D6936D;
   line-height: 183%; /* 21.96px */
   letter-spacing: 0.48px;
 }
-
-.location-line {
+.location .location-line {
   margin-bottom: 24px;
   margin-top: 24px;
 }
-
-.day-location {
+.location .day-location {
   color: #131313;
   line-height: 186%; /* 22.32px */
 }
-
-.time-location {
+.location .time-location {
   color: #ABABAB;
   line-height: 186%; /* 22.32px */
   margin-bottom: 8px;
   display: inline-block;
 }
-
-.time-location:last-child {
+.location .time-location:last-child {
   margin: 0;
 }
-
-.link-location {
+.location .link-location {
   color: #131313;
   line-height: 160%; /* 19.2px */
   margin-bottom: 6px;
   display: inline-block;
 }
-
-.button-wrap-location {
+.location .button-wrap-location {
   text-align: center;
   font-size: 14px;
   font-weight: 600;
   line-height: 18px; /* 128.571% */
 }
-
-.button-location {
+.location .button-location {
   width: 196px;
   background-color: #F8D24E;
   color: #131313;
@@ -812,19 +802,18 @@ img {
   border: none;
   margin-bottom: 16px;
 }
-.button-location:hover {
+.location .button-location:hover {
   background-color: #0A8817;
 }
-.button-location:focus {
+.location .button-location:focus {
   color: #fff;
   background-color: #0A8817;
   outline: none;
 }
-.button-location:disabled {
+.location .button-location:disabled {
   background-color: #ABABAB;
 }
-
-.btn-location {
+.location .btn-location {
   width: 196px;
   background-color: transparent;
   color: #000;
@@ -833,15 +822,35 @@ img {
   padding-bottom: 12px;
   border: 2px solid #F8D24E;
 }
-.btn-location:hover {
+.location .btn-location:hover {
   border: 2px solid #0A8817;
 }
-.btn-location:focus {
+.location .btn-location:focus {
   color: #fff;
   border: 2px solid #0A8817;
 }
-.btn-location:disabled {
+.location .btn-location:disabled {
   border: 2px solid #ABABAB;
+}
+@media screen and (min-width: 768px) {
+  .location .location-list {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .location .button-wrap-location {
+    gap: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .location .location-list {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+  .location .button-wrap-location {
+    gap: 16px;
+  }
 }
 
 .footer {

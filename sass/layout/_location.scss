@@ -1,9 +1,10 @@
 .location{
-    background-color: #84a178;
+    // background-color: #84a178;
     font-weight: 500;
     font-size: 12px;
     padding-bottom: 60px;
-}
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 25%, #84a178 25%);
+    margin-top: -110px;
 
 .location-item{
   background-color: #fff;
@@ -136,3 +137,34 @@ margin-bottom: 16px;
 
 
 }
+
+@media screen and (min-width:768px) {
+    
+    .location-list{
+        display: flex;
+      flex-direction: row;
+      gap: 16px;
+    }
+
+   
+    .button-wrap-location{
+        gap: 16px;
+    }
+
+     }
+
+     @media screen and (min-width:1200px) {
+        .location-list{
+            display: flex;
+          flex-direction: row;
+          gap: 32px;
+        }
+    
+       
+        .button-wrap-location{
+            gap: 16px;
+        }
+    
+         }
+        }
+     
