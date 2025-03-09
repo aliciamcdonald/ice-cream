@@ -1,6 +1,6 @@
 .review {
   background-color: #ffd000;
-  padding-bottom: 188px;
+  padding-bottom: 60px;
   background-image: linear-gradient(#84a178 39px, rgba(0, 0, 0, 0)),
     url("../img/desktop/Bg-icecream.png");
   background-size: cover;
@@ -76,8 +76,12 @@
     }
   }
   @media screen and (min-width: 768px) {
+    padding-bottom: 300px;
+
   }
   @media screen and (min-width: 1200px) {
+    padding-bottom: 188px;
+
   }
 }
 }
