@@ -88,6 +88,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 16px;
+justify-content: center;
   }
 
 
@@ -99,8 +101,7 @@
   padding-top: 12px;
   padding-bottom: 12px;
   border: none;
-  margin-bottom: 16px;
-  &:hover {
+    &:hover {
     background-color: #0a8817;
   }
   &:focus {
@@ -148,6 +149,8 @@
 
   .button-wrap-location {
     gap: 16px;
+    flex-direction: row;
+    align-items: center;
   }
 }
 

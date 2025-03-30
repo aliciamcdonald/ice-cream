@@ -52,6 +52,14 @@
 
  
 
+.splide__arrow--next {
+  opacity: 0;
+}
+
+.splide__arrow--prev {
+  opacity: 0;
+}
+
   @media screen and (min-width: 480px) {
     .img-review {
       width: 440px;
@@ -77,10 +85,27 @@
   }
   @media screen and (min-width: 768px) {
     padding-bottom: 300px;
+    .text-review{
+      width: 705px;
+      height: auto;
+      padding: 28px 80px;
+// text-align: center;
+font-size: 14px;
+font-weight: 500;
+line-height: 1.86;
+letter-spacing: 0.56px;
+    }
 
   }
   @media screen and (min-width: 1200px) {
+  
     padding-bottom: 188px;
+    .text-review{
+font-size: 16px;
+width: 968px;
+letter-spacing: 0.64px;
+padding: 42px 109px;
+    }
 
   }
 }
