@@ -35,7 +35,7 @@ a {
   color: currentColor;
 }
 a:-webkit-any-link {
-  cursor: url(img/cursor.svg) 4 12, auto;
+  // cursor: url(img/cursor.svg) 4 12, auto;
 }
 body {
   max-width: 1600px;
@@ -43,6 +43,7 @@ body {
   font-family: Montserrat;
   color: #131313;
   line-height: normal;
+  position: relative;
   // background-color: #84A178;
 }
 

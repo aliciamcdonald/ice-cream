@@ -414,8 +414,20 @@
     </div> 
   </footer>
 
-    <script>
-      new Splide(".splide").mount();
-    </script>
+  <div class="backdrop active modal-menu">
+    <div class="modal">
+    
+      <a href="/" class="logo">
+        <svg class="header-menu-icon" width="40" height="37">
+          <use href="./img/sprite.svg#logo-icon"></use>
+        </svg>
+      </a>
+      <button> <svg class="modal-menu-btn" width="32" height="32">
+        <use href="./img/sprite.svg#close-btn"></use>
+      </svg></button>
+    </div>
+  </div>
+
+    <script type="module" src="js/slider.js"></script>
   </body>
 </html>
