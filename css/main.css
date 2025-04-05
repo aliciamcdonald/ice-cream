@@ -108,6 +108,10 @@ img {
   pointer-events: initial;
 }
 
+#modal-menu {
+  background-color: #85A279;
+}
+
 .header {
   padding-top: 20px;
   padding-bottom: 15px;

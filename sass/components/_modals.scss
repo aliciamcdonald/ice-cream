@@ -1,26 +1,26 @@
-.backdrop{
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-width: 100vw;
-height: 100vh;
-position: fixed;
-top: 0;
-left: 0;
-background-color: rgba(0, 0, 0, 0.815);
-z-index: 20;
-    & .modal{
+.backdrop {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.815);
+  z-index: 20;
+  & .modal {
     // padding: 12px 20px 12px 34px;
- width: 640px;
- min-width: 320px;
- height: 100%;
- background-color: #fff;
- margin: 0 auto;
-    }
-    
-    &.active{
+    width: 640px;
+    min-width: 320px;
+    height: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+  }
+
+  &.active {
     opacity: 1;
     visibility: visible;
     pointer-events: initial;
-    }
+  }
 }

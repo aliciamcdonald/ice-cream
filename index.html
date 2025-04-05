@@ -413,21 +413,35 @@
       <p class="text-footer">© 2022 - IceCream. All Rights Reserved.</p>
     </div> 
   </footer>
+  
+<!-- ============ разметка всех модальных окон =================== -->
 
-  <div class="backdrop active modal-menu">
-    <div class="modal">
+  <div class="backdrop">
+    <div class="modal " id="modal-menu">
     
       <a href="/" class="logo">
         <svg class="header-menu-icon" width="40" height="37">
           <use href="./img/sprite.svg#logo-icon"></use>
         </svg>
       </a>
-      <button> <svg class="modal-menu-btn" width="32" height="32">
-        <use href="./img/sprite.svg#close-btn"></use>
+      <button> <svg class="modal-close-btn" width="32" height="32">
+        <use href="./img/sprite.svg#icon-close-btn"></use>
       </svg></button>
+
     </div>
   </div>
 
+  <!-- <div class="backdrop ">
+    <div class="modal " id="modal-buy-now">
+    
+      <h2>modal 2</h2>
+      <button> <svg class="modal-close-btn" width="28" height="28">
+        <use href="./img/sprite.svg#icon-close-btn"></use>
+      </svg></button>
+    </div>
+  </div> -->
+
     <script type="module" src="js/slider.js"></script>
+    <script type="module" src="js/modals.js"></script>
   </body>
 </html>
