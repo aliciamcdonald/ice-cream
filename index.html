@@ -28,7 +28,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="header bgc">
+    <header class="header bgc" id="header">
       <div class="container header-wrap">
         <a href="/" class="logo">
           <svg class="header-menu-icon" width="40" height="37">
@@ -43,16 +43,16 @@
         <nav class="header-nav">
           <ul class="header-list">
             <li class="header-item">
-              <a href="#" class="header-link">Home</a>
+              <a href="#header" class="header-link">Home</a>
             </li>
             <li class="header-item">
-              <a href="#" class="header-link">How it’s made?</a>
+              <a href="#how-its-made" class="header-link">How it’s made?</a>
             </li>
             <li class="header-item">
-              <a href="#" class="header-link">Our products</a>
+              <a href="#products" class="header-link">Our products</a>
             </li>
             <li class="header-item">
-              <a href="#" class="header-link">Contact</a>
+              <a href="#contact" class="header-link">Contact</a>
             </li>
           </ul>
         </nav>
@@ -87,7 +87,7 @@
         </div>
       </section>
 
-      <section class="products">
+      <section class="products" id="products">
         <div class="container">
           <h2 class="products-subtitle">100% natural</h2>
           <h2 class="products-title">products</h2>
@@ -151,7 +151,7 @@
           </ul>
         </div>
       </section>
-      <section class="made">
+      <section class="made" id="how-its-made">
         <div class="container">
           <h3 class="made-subtitle">TRADITION AND LOVE</h3>
           <h2 class="made-title">HOW IT'S MADE?</h2>
@@ -281,7 +281,7 @@
           </div>
         </div>
       </section>
-      <section class="location">
+      <section class="location" id="contact">
         <div class="container">
           <ul class="location-list">
             <li class="location-item">
@@ -417,28 +417,43 @@
 <!-- ============ разметка всех модальных окон =================== -->
 
   <div class="backdrop">
-    <div class="modal " id="modal-menu">
+    <div class="modal" id="modal-menu">
     
+      <div class="wrap">
       <a href="/" class="logo">
         <svg class="header-menu-icon" width="40" height="37">
           <use href="./img/sprite.svg#logo-icon"></use>
         </svg>
       </a>
-      <button> <svg class="modal-close-btn" width="32" height="32">
+      <button class="modal-close-btn"> <svg class="icon-modal-close-btn" width="32" height="32">
         <use href="./img/sprite.svg#icon-close-btn"></use>
       </svg></button>
-
-      <p>home</p>
-      <p>How it’s made?</p>
-      <p>Our products</p>
-      <p>Contact</p>
-
-      <button>Buy now</button>
+    </div>
+  
+      <nav class="modal-menu-nav">
+        <ul class="modal-menu-list">
+          <li class="modal-menu-item">
+            <a href="#header" class="modal-menu-link">Home</a>
+          </li>
+          <li class="modal-menu-item">
+            <a href="#how-its-made" class="modal-menu-link">How it’s made?</a>
+          </li>
+          <li class="modal-menu-item">
+            <a href="#products" class="modal-menu-link">Our products</a>
+          </li>
+          <li class="modal-menu-item">
+            <a href="#contact" class="modal-menu-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="button-modal-menu">
+        Buy now >
+      </button>
 
     </div>
   </div>
 
-  <!-- <div class="backdrop ">
+  <div class="backdrop active">
     <div class="modal " id="modal-buy-now">
     
       <h2>modal 2</h2>
@@ -446,7 +461,7 @@
         <use href="./img/sprite.svg#icon-close-btn"></use>
       </svg></button>
     </div>
-  </div> -->
+  </div>
 
     <script type="module" src="js/slider.js"></script>
     <script type="module" src="js/modals.js"></script>
