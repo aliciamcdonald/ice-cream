@@ -35,7 +35,7 @@
             <use href="./img/sprite.svg#logo-icon"></use>
           </svg>
         </a>
-        <a href="#" class="header-menu-btn">
+        <a href="#" class="header-menu-btn" data-action="modal-menu">
           <svg class="header-menu-icon-btn" width="32" height="32">
             <use href="./img/sprite.svg#menu"></use>
           </svg>
@@ -56,7 +56,7 @@
             </li>
           </ul>
         </nav>
-        <button class="button-header animate__animated animate__zoomInUp">
+        <button class="button-header animate__animated animate__zoomInUp" data-action="modal-buy-now">
           Buy now >
         </button>
       </div>
@@ -67,8 +67,8 @@
           <h1 class="banner-title animate__animated animate__zoomInUp">
             ice cream made with <span>passion</span>
           </h1>
-          <button class="banner-btn">Products</button>
-          <a href="#" class="banner-link">How it’s made? </a>
+          <button class="banner-btn" data-action="modal-products">Products</button>
+          <a href="#" class="banner-link" data-action="modal-how-made">How it’s made? </a>
           <!-- <img src="./img/много мороженок 1.png" alt="many Ice-cream"> -->
 
           <p class="banner-text">
@@ -363,8 +363,8 @@
             </li>
           </ul>
           <div class="button-wrap-location">
-            <button type="button" class="button-location">Our Locations</button>
-            <button type="button" class="btn-location">Franchise</button>
+            <button type="button" class="button-location" data-action="modal-locations">Our Locations</button>
+            <button type="button" class="btn-location" data-action="modal-franchise">Franchise</button>
           </div>
         </div>
       </section>
@@ -416,8 +416,8 @@
   
 <!-- ============ разметка всех модальных окон =================== -->
 
-  <div class="backdrop">
-    <div class="modal" id="modal-menu">
+  <div class="backdrop" id="modal-menu" data-action="backdrop">
+    <div class="modal" >
     
       <div class="wrap">
       <a href="/" class="logo">
@@ -429,6 +429,7 @@
         <use href="./img/sprite.svg#icon-close-btn"></use>
       </svg></button>
     </div>
+    <h2>modal menu</h2>
   
       <nav class="modal-menu-nav">
         <ul class="modal-menu-list">
@@ -453,15 +454,52 @@
     </div>
   </div>
 
-  <div class="backdrop active">
-    <div class="modal " id="modal-buy-now">
+  <div  class="backdrop" id="modal-products" data-action="backdrop">
+    <div class="modal">
     
-      <h2>modal 2</h2>
+      <h2>modal products</h2>
       <button> <svg class="modal-close-btn" width="28" height="28">
         <use href="./img/sprite.svg#icon-close-btn"></use>
       </svg></button>
     </div>
   </div>
+  <div class="backdrop" id="modal-buy-now" data-action="backdrop">
+    <div class="modal " >
+    
+      <h2>modal buy-now</h2>
+      <button> <svg class="modal-close-btn" width="28" height="28">
+        <use href="./img/sprite.svg#icon-close-btn"></use>
+      </svg></button>
+    </div>
+  </div>
+  <div class="backdrop" id="modal-how-made" data-action="backdrop">
+    <div class="modal" >
+    
+      <h2>modal how-made</h2>
+      <button> <svg class="modal-close-btn" width="28" height="28">
+        <use href="./img/sprite.svg#icon-close-btn"></use>
+      </svg></button>
+    </div>
+  </div>
+  <div class="backdrop" id="modal-locations" data-action="backdrop">
+    <div class="modal" >
+    
+      <h2>modal franchise</h2>
+      <button> <svg class="modal-close-btn" width="28" height="28">
+        <use href="./img/sprite.svg#icon-close-btn"></use>
+      </svg></button>
+    </div>
+  </div>
+  <div class="backdrop" id="modal-franchise" data-action="backdrop">
+    <div class="modal" >
+    
+      <h2>modal franchise</h2>
+      <button> <svg class="modal-close-btn" width="28" height="28">
+        <use href="./img/sprite.svg#icon-close-btn"></use>
+      </svg></button>
+    </div>
+  </div>
+ 
 
     <script type="module" src="js/slider.js"></script>
     <script type="module" src="js/modals.js"></script>
