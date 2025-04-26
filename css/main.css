@@ -1101,4 +1101,24 @@ img {
     font-size: 12px;
     letter-spacing: 0.24px;
   }
+}
+
+.backdrop-item {
+  color: #FCFCFC;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 32px;
+}
+
+.backdrop-button {
+  width: 152px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #F8D24E;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
