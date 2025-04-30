@@ -28,14 +28,14 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="header bgc">
+    <header class="header bgc" id="header">
       <div class="container header-wrap">
         <a href="/" class="logo">
           <svg class="header-menu-icon" width="40" height="37">
             <use href="./img/sprite.svg#logo-icon"></use>
           </svg>
         </a>
-        <a href="#" class="header-menu-btn">
+        <a href="#" class="header-menu-btn" data-action="modal-menu">
           <svg class="header-menu-icon-btn" width="32" height="32">
             <use href="./img/sprite.svg#menu"></use>
           </svg>
@@ -43,20 +43,20 @@
         <nav class="header-nav">
           <ul class="header-list">
             <li class="header-item">
-              <a href="#" class="header-link">Home</a>
+              <a href="#header" class="header-link">Home</a>
             </li>
             <li class="header-item">
-              <a href="#" class="header-link">How it’s made?</a>
+              <a href="#how-its-made" class="header-link">How it’s made?</a>
             </li>
             <li class="header-item">
-              <a href="#" class="header-link">Our products</a>
+              <a href="#products" class="header-link">Our products</a>
             </li>
             <li class="header-item">
-              <a href="#" class="header-link">Contact</a>
+              <a href="#contact" class="header-link">Contact</a>
             </li>
           </ul>
         </nav>
-        <button class="button-header animate__animated animate__zoomInUp">
+        <button class="button-header animate__animated animate__zoomInUp" data-action="modal-buy-now">
           Buy now >
         </button>
       </div>
@@ -67,8 +67,8 @@
           <h1 class="banner-title animate__animated animate__zoomInUp">
             ice cream made with <span>passion</span>
           </h1>
-          <button class="banner-btn">Products</button>
-          <a href="#" class="banner-link">How it’s made? </a>
+          <button class="banner-btn" data-action="modal-products">Products</button>
+          <a href="#" class="banner-link" data-action="modal-how-made">How it’s made? </a>
           <!-- <img src="./img/много мороженок 1.png" alt="many Ice-cream"> -->
 
           <p class="banner-text">
@@ -87,7 +87,7 @@
         </div>
       </section>
 
-      <section class="products">
+      <section class="products" id="products">
         <div class="container">
           <h2 class="products-subtitle">100% natural</h2>
           <h2 class="products-title">products</h2>
@@ -151,7 +151,7 @@
           </ul>
         </div>
       </section>
-      <section class="made">
+      <section class="made" id="how-its-made">
         <div class="container">
           <h3 class="made-subtitle">TRADITION AND LOVE</h3>
           <h2 class="made-title">HOW IT'S MADE?</h2>
@@ -281,7 +281,7 @@
           </div>
         </div>
       </section>
-      <section class="location">
+      <section class="location" id="contact">
         <div class="container">
           <ul class="location-list">
             <li class="location-item">
@@ -363,8 +363,8 @@
             </li>
           </ul>
           <div class="button-wrap-location">
-            <button type="button" class="button-location">Our Locations</button>
-            <button type="button" class="btn-location">Franchise</button>
+            <button type="button" class="button-location" data-action="modal-locations">Our Locations</button>
+            <button type="button" class="btn-location" data-action="modal-franchise">Franchise</button>
           </div>
         </div>
       </section>
@@ -416,32 +416,40 @@
   
 <!-- ============ разметка всех модальных окон =================== -->
 
-  <div class="backdrop">
-    <div class="modal " id="modal-menu">
+  <div class="backdrop" id="modal-menu" data-action="backdrop">
+    <div class="modal" >
     
+      <div class="wrap">
       <a href="/" class="logo">
         <svg class="header-menu-icon" width="40" height="37">
           <use href="./img/sprite.svg#logo-icon"></use>
         </svg>
       </a>
-      <button> <svg class="modal-close-btn" width="32" height="32">
+      <button class="modal-close-btn"> <svg class="icon-modal-close-btn" width="32" height="32">
         <use href="./img/sprite.svg#icon-close-btn"></use>
       </svg></button>
-<ul class="backdrop-list">
-  <li class="backdrop-item">
-      <a>home</a>
-    </li>
-    <li class="backdrop-item">
-      <a>How it’s made?</a>
-    </li>
-    <li class="backdrop-item">
-      <a>Our products</a>
-    </li>
-    <li class="backdrop-item">
-      <a>Contact</a>
-    </li>
-    </ul>
-      <button class="backdrop-button">Buy now</button>
+    </div>
+    <h2>modal menu</h2>
+  
+      <nav class="modal-menu-nav">
+        <ul class="modal-menu-list">
+          <li class="modal-menu-item">
+            <a href="#header" class="modal-menu-link">Home</a>
+          </li>
+          <li class="modal-menu-item">
+            <a href="#how-its-made" class="modal-menu-link">How it’s made?</a>
+          </li>
+          <li class="modal-menu-item">
+            <a href="#products" class="modal-menu-link">Our products</a>
+          </li>
+          <li class="modal-menu-item">
+            <a href="#contact" class="modal-menu-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="button-modal-menu">
+        Buy now >
+      </button>
 
     </div>
   </div>
@@ -458,11 +466,52 @@
     <div class="modal " id="modal-buy-now">
     
       <h2 class="logo">modal 2</h2>
+  <div  class="backdrop" id="modal-products" data-action="backdrop">
+    <div class="modal">
+    
+      <h2>modal products</h2>
       <button> <svg class="modal-close-btn" width="28" height="28">
         <use href="./img/sprite.svg#icon-close-btn"></use>
       </svg></button>
     </div>
-  </div> -->
+  </div>
+  <div class="backdrop" id="modal-buy-now" data-action="backdrop">
+    <div class="modal " >
+    
+      <h2>modal buy-now</h2>
+      <button> <svg class="modal-close-btn" width="28" height="28">
+        <use href="./img/sprite.svg#icon-close-btn"></use>
+      </svg></button>
+    </div>
+  </div>
+  <div class="backdrop" id="modal-how-made" data-action="backdrop">
+    <div class="modal" >
+    
+      <h2>modal how-made</h2>
+      <button> <svg class="modal-close-btn" width="28" height="28">
+        <use href="./img/sprite.svg#icon-close-btn"></use>
+      </svg></button>
+    </div>
+  </div>
+  <div class="backdrop" id="modal-locations" data-action="backdrop">
+    <div class="modal" >
+    
+      <h2>modal franchise</h2>
+      <button> <svg class="modal-close-btn" width="28" height="28">
+        <use href="./img/sprite.svg#icon-close-btn"></use>
+      </svg></button>
+    </div>
+  </div>
+  <div class="backdrop" id="modal-franchise" data-action="backdrop">
+    <div class="modal" >
+    
+      <h2>modal franchise</h2>
+      <button> <svg class="modal-close-btn" width="28" height="28">
+        <use href="./img/sprite.svg#icon-close-btn"></use>
+      </svg></button>
+    </div>
+  </div>
+ 
 
     <script type="module" src="js/slider.js"></script>
     <script type="module" src="js/modals.js"></script>
