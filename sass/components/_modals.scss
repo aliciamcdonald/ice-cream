@@ -11,11 +11,21 @@
   z-index: 20;
   & .modal {
     // padding: 12px 20px 12px 34px;
-    width: 640px;
-    min-width: 320px;
-    height: 100%;
+    width: 90%;
+    min-width: 280px;
+    max-width: 568px;
+    // height: 100%;
     background-color: #fff;
     margin: 0 auto;
+    @media screen and (min-width: 480px) {
+      width: 80%;
+    }
+    @media screen and (min-width: 768px) {
+      width: 60%;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 48%;
+    }
   }
 
   &.active {
@@ -24,7 +34,7 @@
     pointer-events: initial;
   }
 
-  .modal-close-btn{
+  .modal-close-btn {
     background-color: transparent;
     border: none;
   }

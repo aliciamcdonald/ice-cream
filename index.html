@@ -56,7 +56,10 @@
             </li>
           </ul>
         </nav>
-        <button class="button-header animate__animated animate__zoomInUp" data-action="modal-buy-now">
+        <button
+          class="button-header animate__animated animate__zoomInUp"
+          data-action="modal-buy-now"
+        >
           Buy now >
         </button>
       </div>
@@ -67,8 +70,12 @@
           <h1 class="banner-title animate__animated animate__zoomInUp">
             ice cream made with <span>passion</span>
           </h1>
-          <button class="banner-btn" data-action="modal-products">Products</button>
-          <a href="#" class="banner-link" data-action="modal-how-made">How it’s made? </a>
+          <button class="banner-btn" data-action="modal-products">
+            Products
+          </button>
+          <a href="#" class="banner-link" data-action="modal-how-made"
+            >How it’s made?
+          </a>
           <!-- <img src="./img/много мороженок 1.png" alt="many Ice-cream"> -->
 
           <p class="banner-text">
@@ -363,8 +370,20 @@
             </li>
           </ul>
           <div class="button-wrap-location">
-            <button type="button" class="button-location" data-action="modal-locations">Our Locations</button>
-            <button type="button" class="btn-location" data-action="modal-franchise">Franchise</button>
+            <button
+              type="button"
+              class="button-location"
+              data-action="modal-locations"
+            >
+              Our Locations
+            </button>
+            <button
+              type="button"
+              class="btn-location"
+              data-action="modal-franchise"
+            >
+              Franchise
+            </button>
           </div>
         </div>
       </section>
@@ -407,105 +426,121 @@
           </div>
         </div>
       </div>
-   
-    <div class="rights">
-      <hr class="line-footer" />
-      <p class="text-footer">© 2022 - IceCream. All Rights Reserved.</p>
-    </div> 
-  </footer>
-  
-<!-- ============ разметка всех модальных окон =================== -->
 
-  <div class="backdrop" id="modal-menu" data-action="backdrop">
-    <div class="modal" >
-    
-      <div class="wrap">
-      <a href="/" class="logo">
-        <svg class="header-menu-icon" width="40" height="37">
-          <use href="./img/sprite.svg#logo-icon"></use>
+      <div class="rights">
+        <hr class="line-footer" />
+        <p class="text-footer">© 2022 - IceCream. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- ============ разметка всех модальных окон =================== -->
+
+    <div class="backdrop" id="modal-menu" data-action="backdrop">
+      <div class="modal">
+        <div class="wrap">
+          <a href="/" class="logo">
+            <svg class="header-menu-icon" width="40" height="37">
+              <use href="./img/sprite.svg#logo-icon"></use>
+            </svg>
+          </a>
+          <!-- <button class="modal-close-btn"> -->
+          <svg
+            class="icon-modal-close-btn modal-close-btn"
+            width="32"
+            height="32"
+          >
+            <use href="./img/sprite.svg#icon-close-btn"></use>
+          </svg>
+          <!-- </button> -->
+        </div>
+
+        <nav class="modal-menu-nav">
+          <ul class="modal-menu-list">
+            <li class="modal-menu-item">
+              <a href="#header" class="modal-menu-link">Home</a>
+            </li>
+            <li class="modal-menu-item">
+              <a href="#how-its-made" class="modal-menu-link">How it’s made?</a>
+            </li>
+            <li class="modal-menu-item">
+              <a href="#products" class="modal-menu-link">Our products</a>
+            </li>
+            <li class="modal-menu-item">
+              <a href="#contact" class="modal-menu-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="button-modal-menu">Buy now ></button>
+      </div>
+    </div>
+
+    <div class="backdrop" id="modal-products" data-action="backdrop">
+      <div class="modal">
+        <h2>modal products</h2>
+        <!-- <button> -->
+        <svg class="modal-close-btn" width="28" height="28">
+          <use href="./img/sprite.svg#icon-close-btn"></use>
         </svg>
-      </a>
-      <button class="modal-close-btn"> <svg class="icon-modal-close-btn" width="32" height="32">
-        <use href="./img/sprite.svg#icon-close-btn"></use>
-      </svg></button>
+        <!-- </button> -->
+      </div>
     </div>
-    <h2>modal menu</h2>
-  
-      <nav class="modal-menu-nav">
-        <ul class="modal-menu-list">
-          <li class="modal-menu-item">
-            <a href="#header" class="modal-menu-link">Home</a>
-          </li>
-          <li class="modal-menu-item">
-            <a href="#how-its-made" class="modal-menu-link">How it’s made?</a>
-          </li>
-          <li class="modal-menu-item">
-            <a href="#products" class="modal-menu-link">Our products</a>
-          </li>
-          <li class="modal-menu-item">
-            <a href="#contact" class="modal-menu-link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="button-modal-menu">
-        Buy now >
-      </button>
-
+    <div class="backdrop" id="modal-buy-now" data-action="backdrop">
+      <div class="modal">
+        <h2>modal buy-now</h2>
+        <!-- <button> -->
+        <svg class="modal-close-btn" width="28" height="28">
+          <use href="./img/sprite.svg#icon-close-btn"></use>
+        </svg>
+        <!-- </button> -->
+      </div>
     </div>
-  </div>
-
-
-  
-
-
-  <div  class="backdrop" id="modal-products" data-action="backdrop">
-    <div class="modal">
-    
-      <h2>modal products</h2>
-      <button> <svg class="modal-close-btn" width="28" height="28">
-        <use href="./img/sprite.svg#icon-close-btn"></use>
-      </svg></button>
+    <div class="backdrop active" id="modal-how-made" data-action="backdrop">
+      <div class="modal">
+        <h2 class="how-made-title">Modal how-made</h2>
+        <!-- <button> -->
+        <svg class="modal-close-btn" width="28" height="28">
+          <use href="./img/sprite.svg#icon-close-btn"></use>
+        </svg>
+        <!-- </button> -->
+        <div class="wrap-video">
+          <iframe
+            class="video"
+            src="https://www.youtube.com/embed/prlBXBS_vPg?si=QzDfkebb4mrryhW7"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <p class="hwo-made-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et
+        </p>
+      </div>
     </div>
-  </div>
-  <div class="backdrop" id="modal-buy-now" data-action="backdrop">
-    <div class="modal " >
-    
-      <h2>modal buy-now</h2>
-      <button> <svg class="modal-close-btn" width="28" height="28">
-        <use href="./img/sprite.svg#icon-close-btn"></use>
-      </svg></button>
+    <div class="backdrop" id="modal-locations" data-action="backdrop">
+      <div class="modal">
+        <h2>modal franchise</h2>
+        <button>
+          <svg class="modal-close-btn" width="28" height="28">
+            <use href="./img/sprite.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+      </div>
     </div>
-  </div>
-  <div class="backdrop" id="modal-how-made" data-action="backdrop">
-    <div class="modal" >
-    
-      <h2 class="how-made-title">modal how-made</h2>
-      <button> <svg class="modal-close-btn" width="28" height="28">
-        <use href="./img/sprite.svg#icon-close-btn"></use>
-      </svg></button>
-      <iframe width="560" height="315" class="video" src="https://www.youtube.com/embed/prlBXBS_vPg?si=QzDfkebb4mrryhW7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <p class="hwo-made-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+    <div class="backdrop" id="modal-franchise" data-action="backdrop">
+      <div class="modal">
+        <h2>modal franchise</h2>
+        <button>
+          <svg class="modal-close-btn" width="28" height="28">
+            <use href="./img/sprite.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+      </div>
     </div>
-  </div>
-  <div class="backdrop" id="modal-locations" data-action="backdrop">
-    <div class="modal" >
-    
-      <h2>modal franchise</h2>
-      <button> <svg class="modal-close-btn" width="28" height="28">
-        <use href="./img/sprite.svg#icon-close-btn"></use>
-      </svg></button>
-    </div>
-  </div>
-  <div class="backdrop" id="modal-franchise" data-action="backdrop">
-    <div class="modal" >
-    
-      <h2>modal franchise</h2>
-      <button> <svg class="modal-close-btn" width="28" height="28">
-        <use href="./img/sprite.svg#icon-close-btn"></use>
-      </svg></button>
-    </div>
-  </div>
- 
 
     <script type="module" src="js/slider.js"></script>
     <script type="module" src="js/modals.js"></script>
