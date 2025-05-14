@@ -235,24 +235,55 @@ img {
   line-height: 28px; /* 140% */
   margin-bottom: 40px;
 }
-#modal-products .modal-products-wrap {
+#modal-products .modal-products-list {
   display: flex;
   gap: 32px;
 }
-#modal-products .modal-products-item-crem {
+#modal-products .modal-products-item {
+  border: 2px solid #000;
+  border-radius: 15px;
   color: #131313;
   text-align: center;
-  font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
   letter-spacing: 0.64px;
   text-transform: uppercase;
+  padding-bottom: 20px;
+}
+#modal-products .modal-products-title-card {
+  margin-top: 28px;
 }
 #modal-products .modal-Ice-cream {
   width: 132px;
   height: 132px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid #000;
+  box-shadow: 0 11px 0 0 rgba(156, 190, 143, 0.7), 0px 5.342px 30.033px rgba(10, 136, 23, 0.25);
+}
+#modal-products .img-shadow-ice-cream {
+  box-shadow: 0 11px 0 0 rgba(156, 190, 143, 0.7), 0px 5.342px 30.033px rgba(10, 136, 23, 0.25);
+}
+#modal-products .img-shadow-ice-coffe {
+  box-shadow: 0 11px 0 0 rgba(248, 210, 78, 0.7), 0px 5.404px 20.265px rgba(153, 114, 23, 0.25);
+}
+#modal-products .img-shadow-milkshake {
+  box-shadow: 0 11px 0 0 rgba(213, 117, 63, 0.7), 0px 5.413px 20.3px rgba(0, 0, 0, 0.25);
+}
+#modal-products .products-information {
+  border-radius: 10px;
+  border: 1px solid #84A178;
+  background: rgba(248, 210, 78, 0.1);
+  width: 368px;
+  height: 42px;
+  flex-shrink: 0;
+}
+#modal-products .products-submitbutton {
+  border-radius: 10px;
+  background: #F8D24E;
+  width: 121px;
+  height: 42px;
   flex-shrink: 0;
 }
 
