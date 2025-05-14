@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         currentModal.classList.remove("active"); // Закриваємо тільки поточну модалку
       }
       modal.classList.add("active"); // Відкриваємо нову модалку
-      // body.style.overflow = "hidden"; // Заборона прокрутки
+      body.style.overflow = "hidden"; // Заборона прокрутки
       window.addEventListener("keydown", onEscPress);
     }
   }
