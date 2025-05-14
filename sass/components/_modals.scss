@@ -8,10 +8,12 @@
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.815);
-  z-index: 20;
+  z-index: 5;
   & .modal {
-    // padding: 12px 20px 12px 34px;
+    position: relative;
+    padding: 28px;
     width: 90%;
+    z-index: 15;
     min-width: 280px;
     max-width: 568px;
     // height: 100%;
@@ -35,7 +37,10 @@
   }
 
   .modal-close-btn {
+    position: absolute;
     background-color: transparent;
     border: none;
+    right: 12px;
+    top: 12px;
   }
 }

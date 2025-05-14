@@ -93,10 +93,13 @@ img {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.815);
-  z-index: 20;
+  z-index: 5;
 }
 .backdrop .modal {
+  position: relative;
+  padding: 28px;
   width: 90%;
+  z-index: 15;
   min-width: 280px;
   max-width: 568px;
   background-color: #fff;
@@ -123,8 +126,11 @@ img {
   pointer-events: initial;
 }
 .backdrop .modal-close-btn {
+  position: absolute;
   background-color: transparent;
   border: none;
+  right: 12px;
+  top: 12px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -190,13 +196,6 @@ img {
   position: relative;
   padding-top: 28px;
 }
-#modal-how-made .modal-close-btn {
-  position: absolute;
-  right: 12px;
-  top: 12px;
-  height: 20px;
-  width: 20px;
-}
 #modal-how-made .wrap-video {
   position: relative;
   overflow: hidden;
@@ -225,19 +224,25 @@ img {
   margin: 0 auto;
 }
 
+#modal-products .modal {
+  overflow: auto;
+}
 #modal-products .products-buy {
   color: #131313;
   text-align: center;
   font-family: "Seymour One";
   font-size: 20px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 28px; /* 140% */
+  line-height: 1.4; /* 140% */
   margin-bottom: 40px;
 }
 #modal-products .modal-products-list {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 32px;
+  margin-bottom: 32px;
 }
 #modal-products .modal-products-item {
   border: 2px solid #000;
@@ -273,18 +278,36 @@ img {
 }
 #modal-products .products-information {
   border-radius: 10px;
-  border: 1px solid #84A178;
+  border: 1px solid #84a178;
   background: rgba(248, 210, 78, 0.1);
-  width: 368px;
   height: 42px;
-  flex-shrink: 0;
+  width: 100%;
+  padding: 8px 12px;
+  color: #131313;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.4; /* 16.8px */
+}
+#modal-products .form-textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #84a178;
+  background: rgba(248, 210, 78, 0.1);
+  color: #131313;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.4; /* 16.8px */
+  margin-bottom: 26px;
 }
 #modal-products .products-submitbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 10px;
-  background: #F8D24E;
-  width: 121px;
-  height: 42px;
-  flex-shrink: 0;
+  padding: 12px 34px;
+  margin: 0 auto;
+  background: #f8d24e;
 }
 
 .header {
