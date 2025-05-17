@@ -9,7 +9,7 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 1.4; /* 140% */
-    margin-bottom: 40px;
+    margin-bottom: 86px;
   }
 
   .modal-products-wrap {
@@ -20,12 +20,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 32px;
+    gap: 98px;
     margin-bottom: 32px;
   }
 
   .modal-products-item {
-    border: 2px solid #000;
+    // border: 2px solid #000;
     border-radius: 15px;
     color: #131313;
     text-align: center;
@@ -35,6 +35,15 @@
     letter-spacing: 0.64px;
     text-transform: uppercase;
     padding-bottom: 20px;
+   &:nth-child(1){
+        border: 2px solid #96AF8C;
+    }
+   &:nth-child(2){
+        border: 2px solid #EFD478;
+    }
+    &:nth-child(3){
+        border: 2px solid #D6936D;
+    }
   }
 
   .modal-products-title-card {
@@ -49,6 +58,7 @@
     border: 1px solid #000;
     box-shadow: 0 11px 0 0 rgba(156, 190, 143, 0.7),
       0px 5.342px 30.033px rgba(10, 136, 23, 0.25);
+      margin-top: 66px;
   }
 
   .img-shadow-ice-cream {
@@ -103,4 +113,6 @@
     margin: 0 auto;
     background: #f8d24e;
   }
+
+  @media screen and (min-width:768px){}
 }

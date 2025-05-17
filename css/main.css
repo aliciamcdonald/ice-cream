@@ -236,18 +236,17 @@ img {
   font-size: 20px;
   font-weight: 400;
   line-height: 1.4; /* 140% */
-  margin-bottom: 40px;
+  margin-bottom: 86px;
 }
 #modal-products .modal-products-list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 32px;
+  gap: 98px;
   margin-bottom: 32px;
 }
 #modal-products .modal-products-item {
-  border: 2px solid #000;
   border-radius: 15px;
   color: #131313;
   text-align: center;
@@ -257,6 +256,15 @@ img {
   letter-spacing: 0.64px;
   text-transform: uppercase;
   padding-bottom: 20px;
+}
+#modal-products .modal-products-item:nth-child(1) {
+  border: 2px solid #96AF8C;
+}
+#modal-products .modal-products-item:nth-child(2) {
+  border: 2px solid #EFD478;
+}
+#modal-products .modal-products-item:nth-child(3) {
+  border: 2px solid #D6936D;
 }
 #modal-products .modal-products-title-card {
   margin-top: 28px;
@@ -268,6 +276,7 @@ img {
   border-radius: 50%;
   border: 1px solid #000;
   box-shadow: 0 11px 0 0 rgba(156, 190, 143, 0.7), 0px 5.342px 30.033px rgba(10, 136, 23, 0.25);
+  margin-top: 66px;
 }
 #modal-products .img-shadow-ice-cream {
   box-shadow: 0 11px 0 0 rgba(156, 190, 143, 0.7), 0px 5.342px 30.033px rgba(10, 136, 23, 0.25);
@@ -311,7 +320,6 @@ img {
   margin: 0 auto;
   background: #f8d24e;
 }
-
 #modal-franchise .franchise-title {
   width: 221px;
   color: #131313;
@@ -325,7 +333,6 @@ img {
   margin-bottom: 20px;
 }
 #modal-franchise .franchise-text {
-  width: 222px;
   color: #131313;
   font-family: Montserrat;
   font-size: 14px;
@@ -334,6 +341,9 @@ img {
   line-height: 140%; /* 19.6px */
   margin: 0 auto;
   margin-bottom: 24px;
+}
+#modal-franchise .franchise-submit {
+  margin: 0 auto;
 }
 #modal-franchise .franchise-information {
   border-radius: 10px;
@@ -346,6 +356,7 @@ img {
   font-size: 12px;
   font-weight: 400;
   line-height: 1.4; /* 16.8px */
+  margin-bottom: 12px;
 }
 #modal-franchise .franchise-textarea {
   width: 100%;
@@ -367,6 +378,11 @@ img {
   padding: 12px 34px;
   margin: 0 auto;
   background: #f8d24e;
+}
+@media screen and (min-width: 768px) {
+  #modal-franchise .franchise-submit {
+    width: 368px;
+  }
 }
 
 .header {
