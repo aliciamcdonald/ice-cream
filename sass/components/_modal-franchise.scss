@@ -1,0 +1,67 @@
+#modal-franchise{
+
+.franchise-title{
+    width: 221px;
+    color: #131313;
+text-align: center;
+font-family: "Seymour One";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+margin: 0 auto;
+margin-bottom: 20px;
+}
+
+.franchise-text{
+    width: 222px;
+    color: #131313;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 19.6px */
+margin: 0 auto;
+margin-bottom: 24px;
+}
+
+.franchise-submit{}
+
+.franchise-information {
+    border-radius: 10px;
+    border: 1px solid #84a178;
+    background: rgba(248, 210, 78, 0.1);
+    height: 42px;
+    width: 100%;
+    padding: 8px 12px;
+    color: #131313;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.4; /* 16.8px */
+  }
+
+
+  .franchise-textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid #84a178;
+    background: rgba(248, 210, 78, 0.1);
+    color: #131313;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.4; /* 16.8px */
+    margin-bottom: 26px;
+  }
+
+  .franchise-submitbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 12px 34px;
+    margin: 0 auto;
+    background: #f8d24e;
+  }
+
+}

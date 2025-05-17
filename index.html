@@ -593,8 +593,47 @@
     </div>
     <div class="backdrop" id="modal-franchise" data-action="backdrop">
       <div class="modal">
-        <h2>modal franchise</h2>
-        <button>
+        <h2 class="franchise-title">Thank you for your interest in owning an Ice Cream shop</h2>
+       <p class="franchise-text">Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. Once the application process resumes, we will contact you for further information. Please fill out the contact information below and we will reach out for additional information. We appreciate your patience.</p>
+      
+       <form class="franchise-submit">
+        <label>
+          <input
+            type="text"
+            name="Name"
+            autofocus
+            placeholder="Name"
+            class="franchise-information"
+          />
+        </label>
+        <label>
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone"
+            class="franchise-information"
+          />
+        </label>
+        <label>
+          <input
+            type="email"
+            name="Email"
+            placeholder="email"
+            class="franchise-information"
+          />
+        <label>
+          <textarea
+            name=""
+            id=""
+            class="franchise-textarea"
+            rows="3"
+            placeholder="Comment"
+          ></textarea>
+
+          <button class="franchise-submitbutton" type="submit">Submit</button>
+        </label>
+      </form>
+       <button>
           <svg class="modal-close-btn" width="20" height="20">
             <use href="./img/sprite.svg#icon-close-btn"></use>
           </svg>
