@@ -1,7 +1,152 @@
+#modal-buy-now {
+  .buy-title {
+    color: #131313;
+    text-align: center;
+    font-family: "Seymour One";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+    margin-bottom: 24px;
+  }
 
-#modal-buy-now{
+  .buy-img {
+    margin: 0 auto;
+    margin-bottom: 32px;
+    fill: linear-gradient(0deg, rgba(156, 190, 143, 0.70) 0%, rgba(156, 190, 143, 0.70) 100%), #D9D9D9;
+filter: drop-shadow(0px 5.26px 19.726px rgba(10, 136, 23, 0.25));
+box-shadow: 0 7px  0 0 rgba(156, 190, 143, 0.70) ;
+border-radius: 50%;
+  }
 
-.logo{}
+ .buy-amount-list{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 48px;
+ }
 
-.modal-close-btn{}
+ .buy-amount-item{
+    border-radius: 40px;
+border: 2px solid #9CBE8F;
+width: 53px;
+height: 72px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column; 
+gap: 8px;
+
+}
+
+ .buy-amount-proportion{
+color: #131313;
+text-align: center;
+// -webkit-text-stroke-width: 2px;
+background-color: #9CBE8F;
+font-size: 10px;
+font-weight: 500;
+line-height: 2.8; 
+border-radius: 50%;
+width: 43px;
+height: 43px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: -8px;
+ }
+
+ .buy-amount-energy{
+    color: #131313;
+text-align: center;
+font-family: Montserrat;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+ }
+
+  .buy-subtitle {
+    color: #131313;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 140% */
+    margin-bottom: 24px;
+  }
+
+  .buy-list {
+    margin-bottom: 48px;
+  }
+
+  .buy-ingredients-item{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .buy-ingredients-text{
+    color: #131313;
+text-align: center;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 176%; /* 24.64px */
+letter-spacing: 0.56px;
+  }
+
+  .buy-ingredients-span{
+    color: #131313;
+text-align: center;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 176%; /* 24.64px */
+letter-spacing: 0.56px;
+  }
+
+  .products-submit {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .products-information {
+    border-radius: 10px;
+    border: 1px solid #84a178;
+    background: rgba(248, 210, 78, 0.1);
+    height: 42px;
+    width: 100%;
+    padding: 11px 16px;
+    color: #131313;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.4; /* 16.8px */
+  }
+  .form-textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid #84a178;
+    background: rgba(248, 210, 78, 0.1);
+    color: #131313;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.4; /* 16.8px */
+    margin-bottom: 26px;
+  }
+
+  .products-submitbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 12px 34px;
+    margin: 0 auto;
+    background: #f8d24e;
+    border-color: transparent;
+  }
 }

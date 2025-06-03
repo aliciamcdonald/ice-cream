@@ -2,6 +2,7 @@
   .modal {
     overflow: auto;
   }
+
   .products-buy {
     color: #131313;
     text-align: center;
@@ -77,6 +78,9 @@
   }
 
   .products-submit {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
   }
 
   .products-information {

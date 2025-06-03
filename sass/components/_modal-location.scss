@@ -1,27 +1,44 @@
-#modal-locations{
+#modal-locations {
+  .modal-locations-title {
+    color: #131313;
+    text-align: center;
+    font-family: "Seymour One";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
 
-    .modal-locations-title{
-        color: #131313;
-        text-align: center;
-        font-family: "Seymour One";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
+  .modal-locations-map {
+    margin: 0 auto;
+    width: 224px;
+    height: 199px;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 24px;
+
+  }
+
+  .modal-locations-button {
+    padding: 12px 34px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #f8d24e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-color: transparent;
+  }
+
+@media screen and (min-width:768px ) {
+ 
+    .modal{
+        width: 568px;
     }
     .modal-locations-map{
-        width: 224px;
-       height: 199px;
-     flex-shrink: 0;
-     border-radius: 10px;
-      background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+        width: 448px;
+        height: 260px;
     }
-
-    .modal-locations-button{
-        width: 134px;
-        height: 42px;
-        flex-shrink: 0;
-        border-radius: 10px;
-background: #F8D24E;
-    }
-
+}
 }

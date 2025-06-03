@@ -182,6 +182,142 @@ img {
   margin: 0 auto;
   display: flex;
 }
+#modal-buy-now .buy-title {
+  color: #131313;
+  text-align: center;
+  font-family: "Seymour One";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 140% */
+  margin-bottom: 24px;
+}
+#modal-buy-now .buy-img {
+  margin: 0 auto;
+  margin-bottom: 32px;
+  fill: linear-gradient(0deg, rgba(156, 190, 143, 0.7) 0%, rgba(156, 190, 143, 0.7) 100%), #D9D9D9;
+  filter: drop-shadow(0px 5.26px 19.726px rgba(10, 136, 23, 0.25));
+  box-shadow: 0 7px 0 0 rgba(156, 190, 143, 0.7);
+  border-radius: 50%;
+}
+#modal-buy-now .buy-amount-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+#modal-buy-now .buy-amount-item {
+  border-radius: 40px;
+  border: 2px solid #9CBE8F;
+  width: 53px;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+}
+#modal-buy-now .buy-amount-proportion {
+  color: #131313;
+  text-align: center;
+  background-color: #9CBE8F;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 2.8;
+  border-radius: 50%;
+  width: 43px;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -8px;
+}
+#modal-buy-now .buy-amount-energy {
+  color: #131313;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#modal-buy-now .buy-subtitle {
+  color: #131313;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 140% */
+  margin-bottom: 24px;
+}
+#modal-buy-now .buy-list {
+  margin-bottom: 48px;
+}
+#modal-buy-now .buy-ingredients-item {
+  display: flex;
+  justify-content: space-between;
+}
+#modal-buy-now .buy-ingredients-text {
+  color: #131313;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 176%; /* 24.64px */
+  letter-spacing: 0.56px;
+}
+#modal-buy-now .buy-ingredients-span {
+  color: #131313;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 176%; /* 24.64px */
+  letter-spacing: 0.56px;
+}
+#modal-buy-now .products-submit {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+#modal-buy-now .products-information {
+  border-radius: 10px;
+  border: 1px solid #84a178;
+  background: rgba(248, 210, 78, 0.1);
+  height: 42px;
+  width: 100%;
+  padding: 11px 16px;
+  color: #131313;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.4; /* 16.8px */
+}
+#modal-buy-now .form-textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #84a178;
+  background: rgba(248, 210, 78, 0.1);
+  color: #131313;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.4; /* 16.8px */
+  margin-bottom: 26px;
+}
+#modal-buy-now .products-submitbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 12px 34px;
+  margin: 0 auto;
+  background: #f8d24e;
+  border-color: transparent;
+}
+
 #modal-how-made .modal {
   padding: 28px;
 }
@@ -287,6 +423,11 @@ img {
 #modal-products .img-shadow-milkshake {
   box-shadow: 0 11px 0 0 rgba(213, 117, 63, 0.7), 0px 5.413px 20.3px rgba(0, 0, 0, 0.25);
 }
+#modal-products .products-submit {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
 #modal-products .products-information {
   border-radius: 10px;
   border: 1px solid #84a178;
@@ -385,68 +526,41 @@ img {
   }
 }
 
-#modal-franchise .franchise-title {
-  width: 221px;
+#modal-locations .modal-locations-title {
   color: #131313;
   text-align: center;
   font-family: "Seymour One";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
-  margin: 0 auto;
   margin-bottom: 20px;
 }
-#modal-franchise .franchise-text {
-  color: #131313;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%; /* 19.6px */
+#modal-locations .modal-locations-map {
   margin: 0 auto;
+  width: 224px;
+  height: 199px;
+  border-radius: 10px;
+  display: block;
   margin-bottom: 24px;
 }
-#modal-franchise .franchise-submit {
-  margin: 0 auto;
-}
-#modal-franchise .franchise-information {
+#modal-locations .modal-locations-button {
+  padding: 12px 34px;
+  flex-shrink: 0;
   border-radius: 10px;
-  border: 1px solid #84a178;
-  background: rgba(248, 210, 78, 0.1);
-  height: 42px;
-  width: 100%;
-  padding: 8px 12px;
-  color: #131313;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.4; /* 16.8px */
-  margin-bottom: 12px;
-}
-#modal-franchise .franchise-textarea {
-  width: 100%;
-  padding: 8px 12px;
-  border-radius: 10px;
-  border: 1px solid #84a178;
-  background: rgba(248, 210, 78, 0.1);
-  color: #131313;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.4; /* 16.8px */
-  margin-bottom: 26px;
-}
-#modal-franchise .franchise-submitbutton {
+  background: #f8d24e;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
-  padding: 12px 34px;
   margin: 0 auto;
-  background: #f8d24e;
+  border-color: transparent;
 }
 @media screen and (min-width: 768px) {
-  #modal-franchise .franchise-submit {
-    width: 368px;
+  #modal-locations .modal {
+    width: 568px;
+  }
+  #modal-locations .modal-locations-map {
+    width: 448px;
+    height: 260px;
   }
 }
 

@@ -546,7 +546,93 @@
     </div>
     <div class="backdrop" id="modal-buy-now" data-action="backdrop">
       <div class="modal">
-        <h2>modal buy-now</h2>
+        <h2 class="buy-title">Chololate icecream</h2>
+        <img
+          class="buy-img"
+          src="img/desktop/chocolat-icecream.png"
+          alt="chocolate"
+          height="132px"
+          width="132px"
+        />
+
+        <ul class="buy-amount-list">
+          <li class="buy-amount-item">
+            <span class="buy-amount-proportion">320</span
+            ><span class="buy-amount-energy">kcal</span>
+          </li>
+          <li class="buy-amount-item">
+            <span class="buy-amount-proportion">4g</span
+            ><span class="buy-amount-energy">Protein...</span>
+          </li>
+          <li class="buy-amount-item">
+            <span class="buy-amount-proportion">8,2g</span
+            ><span class="buy-amount-energy">Fats</span>
+          </li>
+          <li class="buy-amount-item">
+            <span class="buy-amount-proportion">40,4g</span
+            ><span class="buy-amount-energy">Carbs</span>
+          </li>
+        </ul>
+
+        <h3 class="buy-subtitle">Ingredients</h3>
+
+        <ul class="buy-list">
+          <li class="buy-ingredients-item">
+            <p class="buy-ingredients-text">Milk</p>
+            <span class="buy-ingredients-span">100ml</span>
+          </li>
+          <li class="buy-ingredients-item">
+            <p class="buy-ingredients-text">Belgian chocolate</p>
+            <span class="buy-ingredients-span">20g</span>
+          </li>
+          <li class="buy-ingredients-item">
+            <p class="buy-ingredients-text">Cream</p>
+            <span class="buy-ingredients-span">150 ml</span>
+          </li>
+          <li class="buy-ingredients-item">
+            <p class="buy-ingredients-text">Cocoa powder</p>
+            <span class="buy-ingredients-span">30g</span>
+          </li>
+          <li class="buy-ingredients-item">
+            <p class="buy-ingredients-text">Sugar</p>
+            <span class="buy-ingredients-span">40g</span>
+          </li>
+          <li class="buy-ingredients-item">
+            <p class="buy-ingredients-text">Vanilla sugar</p>
+            <span >10g</span>
+          </li>
+        </ul>
+
+        <form class="products-submit">
+          <label>
+            <input
+              type="text"
+              name="Name"
+              autofocus
+              placeholder="Name"
+              class="products-information"
+            />
+          </label>
+          <label>
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone"
+              class="products-information"
+            />
+          </label>
+          <label>
+            <textarea
+              name=""
+              id=""
+              class="form-textarea"
+              rows="3"
+              placeholder="Comment"
+            ></textarea>
+
+            <button class="products-submitbutton" type="submit">Submit</button>
+          </label>
+        </form>
         <!-- <button> -->
         <svg class="modal-close-btn" width="20" height="20">
           <use href="./img/sprite.svg#icon-close-btn"></use>
@@ -584,62 +670,75 @@
     <div class="backdrop" id="modal-locations" data-action="backdrop">
       <div class="modal">
         <h2 class="modal-locations-title">Our Locations</h2>
-        <iframe class="modal-locations-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d70557.95631437957!2d34.48292844670828!3d49.60233436269199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d825e425e6ba6b%3A0xcf3e6bdfb9e4ca82!2sPoltava%2C%20Ukraine%2C%2036000!5e0!3m2!1sfr!2sus!4v1748093912105!5m2!1sfr!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          class="modal-locations-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d70557.95631437957!2d34.48292844670828!3d49.60233436269199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d825e425e6ba6b%3A0xcf3e6bdfb9e4ca82!2sPoltava%2C%20Ukraine%2C%2036000!5e0!3m2!1sfr!2sus!4v1748093912105!5m2!1sfr!2sus"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
         <button class="modal-locations-button">Open map</button>
-        <button>
-          <svg class="modal-close-btn" width="20" height="20">
-            <use href="./img/sprite.svg#icon-close-btn"></use>
-          </svg>
-        </button>
+
+        <svg class="modal-close-btn" width="20" height="20">
+          <use href="./img/sprite.svg#icon-close-btn"></use>
+        </svg>
       </div>
     </div>
-    <div class="backdrop active" id="modal-franchise" data-action="backdrop">
+    <div class="backdrop" id="modal-franchise" data-action="backdrop">
       <div class="modal">
-        <h2 class="franchise-title">Thank you for your interest in owning an Ice Cream shop</h2>
-       <p class="franchise-text">Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. Once the application process resumes, we will contact you for further information. Please fill out the contact information below and we will reach out for additional information. We appreciate your patience.</p>
-      
-       <form class="franchise-submit">
-        <label>
-          <input
-            type="text"
-            name="Name"
-            autofocus
-            placeholder="Name"
-            class="franchise-information"
-          />
-        </label>
-        <label>
-          <input
-            type="tel"
-            name="phone"
-            placeholder="Phone"
-            class="franchise-information"
-          />
-        </label>
-        <label>
-          <input
-            type="email"
-            name="Email"
-            placeholder="email"
-            class="franchise-information"
-          />
-        </label>
-        <label>
-          <textarea
-            name=""
-            id=""
-            class="franchise-textarea"
-            rows="3"
-            placeholder="Comment"
-          ></textarea>
+        <h2 class="franchise-title">
+          Thank you for your interest in owning an Ice Cream shop
+        </h2>
+        <p class="franchise-text">
+          Due to the overwhelming volume of franchise requests we are not
+          accepting new franchisee applications at this time. Once the
+          application process resumes, we will contact you for further
+          information. Please fill out the contact information below and we will
+          reach out for additional information. We appreciate your patience.
+        </p>
 
-        </label>
-        <button class="franchise-submitbutton" type="submit">Submit</button>
-      </form>
-       <!-- <button> -->
-          <svg class="modal-close-btn" width="20" height="20">
-            <use href="./img/sprite.svg#icon-close-btn"></use>
-          </svg>
+        <form class="franchise-submit">
+          <label>
+            <input
+              type="text"
+              name="Name"
+              autofocus
+              placeholder="Name"
+              class="franchise-information"
+            />
+          </label>
+          <label>
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone"
+              class="franchise-information"
+            />
+          </label>
+          <label>
+            <input
+              type="email"
+              name="Email"
+              placeholder="email"
+              class="franchise-information"
+            />
+          </label>
+          <label>
+            <textarea
+              name=""
+              id=""
+              class="franchise-textarea"
+              rows="3"
+              placeholder="Comment"
+            ></textarea>
+          </label>
+          <button class="franchise-submitbutton" type="submit">Submit</button>
+        </form>
+        <!-- <button> -->
+        <svg class="modal-close-btn" width="20" height="20">
+          <use href="./img/sprite.svg#icon-close-btn"></use>
+        </svg>
         <!-- </button> -->
       </div>
     </div>
